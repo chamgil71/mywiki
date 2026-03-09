@@ -1,0 +1,57 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .layer { fill:#f5f7fa; stroke:#333; stroke-width:1.2; rx:14; }
+    .title { font-size:16px; font-weight:bold; fill:#111; }
+    .item { font-size:13px; fill:#222; }
+    .korea { fill:#0b6cff; font-weight:bold; }
+  </style>
+
+  <rect class="layer" x="40" y="40" width="320" height="170"/>
+  <text class="title" x="55" y="65">1. Power Generation</text>
+  <text class="item" x="55" y="95">• GE Vernova</text>
+  <text class="item" x="55" y="115">• Siemens Energy</text>
+  <text class="item" x="55" y="135">• TerraPower</text>
+  <text class="item korea" x="55" y="155">• 두산에너빌리티 (KR)</text>
+
+  <rect class="layer" x="420" y="40" width="340" height="170"/>
+  <text class="title" x="435" y="65">2. AI Computing Hardware</text>
+  <text class="item" x="435" y="95">• NVIDIA</text>
+  <text class="item" x="435" y="115">• AMD</text>
+  <text class="item" x="435" y="135">• Intel</text>
+  <text class="item korea" x="435" y="155">• 삼성전자 (KR)</text>
+
+  <rect class="layer" x="800" y="40" width="340" height="170"/>
+  <text class="title" x="815" y="65">3. Supporting Infrastructure</text>
+  <text class="item" x="815" y="95">• Vertiv</text>
+  <text class="item" x="815" y="115">• Schneider Electric</text>
+  <text class="item" x="815" y="135">• Eaton</text>
+  <text class="item korea" x="815" y="155">• LG전자 (KR)</text>
+
+  <rect class="layer" x="40" y="260" width="360" height="170"/>
+  <text class="title" x="55" y="285">4. Networking &amp; Connectivity</text>
+  <text class="item" x="55" y="315">• Cisco</text>
+  <text class="item" x="55" y="335">• Arista Networks</text>
+  <text class="item" x="55" y="355">• Cloudflare</text>
+  <text class="item korea" x="55" y="375">• KT / SK브로드밴드 (KR)</text>
+
+  <rect class="layer" x="440" y="260" width="340" height="170"/>
+  <text class="title" x="455" y="285">5. Data Storage &amp; Database</text>
+  <text class="item" x="455" y="315">• Pure Storage</text>
+  <text class="item" x="455" y="335">• Snowflake</text>
+  <text class="item" x="455" y="355">• MongoDB</text>
+  <text class="item korea" x="455" y="375">• SK하이닉스 (KR)</text>
+
+  <rect class="layer" x="820" y="260" width="340" height="170"/>
+  <text class="title" x="835" y="285">6. AI Cloud Services</text>
+  <text class="item" x="835" y="315">• CoreWeave</text>
+  <text class="item" x="835" y="335">• Lambda Labs</text>
+  <text class="item" x="835" y="355">• Crusoe</text>
+  <text class="item korea" x="835" y="375">• NHN Cloud (KR)</text>
+
+  <rect class="layer" x="260" y="500" width="680" height="190"/>
+  <text class="title" x="280" y="525">7. Data Center Facilities &amp; Operations</text>
+  <text class="item" x="280" y="555">• Equinix</text>
+  <text class="item" x="280" y="575">• Digital Realty</text>
+  <text class="item" x="280" y="595">• Vantage Data Centers</text>
+  <text class="item korea" x="280" y="615">• 삼성SDS / LG CNS / KT IDC (KR)</text>
+</svg>
