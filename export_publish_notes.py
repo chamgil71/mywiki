@@ -42,10 +42,8 @@ def is_publish_true(filepath):
 
 
 def get_scan_roots():
-    """스캔할 폴더 목록 반환. PUBLISH_FOLDERS 없으면 OBSIDIAN_PATH 전체"""
-    if not PUBLISH_FOLDERS:
-        return [OBSIDIAN_PATH]
-    return [os.path.join(OBSIDIAN_PATH, folder) for folder in PUBLISH_FOLDERS]
+    """항상 OBSIDIAN_PATH 전체 스캔"""
+    return [OBSIDIAN_PATH]
 
 
 def get_dst_path(src):
@@ -59,22 +57,18 @@ def get_dst_path(src):
     for folder in PUBLISH_FOLDERS:
         scan_root = os.path.join(OBSIDIAN_PATH, folder)
         if src.startswith(scan_root):
-            base = os.path.dirname(scan_root)  # 기술도서작성의 부모
-            rel = os.path.relpath(src, base)   # 기술도서작성/옵시디언가이드/a.md
-            return os.path.join(QUARTZ_CONTENT, rel)
+            top = os.path.basename(scan_root)       # 기술도서작성
+            rel = os.path.relpath(src, scan_root)   # 옵시디언가이드/a.md
+            return os.path.join(QUARTZ_CONTENT, top, rel)
 
-    # PUBLISH_FOLDERS 없는 경우: OBSIDIAN_PATH 기준 상대경로
-    rel = os.path.relpath(src, OBSIDIAN_PATH)
-    return os.path.join(QUARTZ_CONTENT, rel)
+    # PUBLISH_FOLDERS 에 없는 파일: content/ 루트에 flat하게
+    return os.path.join(QUARTZ_CONTENT, os.path.basename(src))
 
 
 def collect_targets():
     """publish:true 인 md 파일 목록 반환 [(src, dst), ...]"""
     targets = []
     for scan_root in get_scan_roots():
-        if not os.path.exists(scan_root):
-            print(f"  [경고] 폴더 없음: {scan_root}")
-            continue
         for root, dirs, files in os.walk(scan_root):
             for file in files:
                 if not file.endswith(".md"):
