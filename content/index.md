@@ -1,6 +1,7 @@
 ---
 title: Home
 slug: /
+publish: true
 ---
 
 # My Wiki
