@@ -1,15 +1,15 @@
 {
-  "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
+  "name": "msshin-chamgil71",
+  "description": "quartz 로 옵시디언을",
   "private": true,
-  "version": "4.5.2",
+  "version": "1.0.0",
   "type": "module",
-  "author": "jackyzha0 <j.zhao2k19@gmail.com>",
+  "author": "chamgil <chamgil@gmail.com>",
   "license": "MIT",
-  "homepage": "https://quartz.jzhao.xyz",
+  "homepage": "https://chamgil71.github.io/mywiki/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jackyzha0/quartz.git"
+    "url": "https://github.com/chamgil71/mywiki.git"
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",

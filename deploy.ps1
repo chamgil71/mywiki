@@ -2,7 +2,7 @@
 # deploy.ps1 - Obsidian → Quartz → GitHub Pages 배포
 
 # 1. 가상환경 활성화
-C:\coding\.venv\Scripts\Activate.ps1
+C:\ai\.venv311\Scripts\Activate.ps1
 
 # 2. Quartz 프로젝트 폴더로 이동
 Set-Location -Path C:\ai\mywiki

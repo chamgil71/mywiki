@@ -81,7 +81,17 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({
+        sort: (a: any, b: any) => {
+          const aIsFolder = a.children !== undefined
+          const bIsFolder = b.children !== undefined
+          if (aIsFolder && !bIsFolder) return -1
+          if (!aIsFolder && bIsFolder) return 1
+          const aName = a.displayName ?? a.slug ?? ""
+          const bName = b.displayName ?? b.slug ?? ""
+          return aName.localeCompare(bName, "ko") * -1
+        }
+      }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,
