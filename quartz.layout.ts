@@ -53,6 +53,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     Component.Search(),
+    Component.TagList(),
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
