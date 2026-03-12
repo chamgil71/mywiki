@@ -9,10 +9,11 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       // 1. 본인의 GitHub 저장소 주소로 변경
-      "© 2026 My Wiki GitHub": "https://github.com/chamgil71/mywiki",
+      "© 2026 MS Wiki GitHub": "https://github.com/chamgil71/mywiki",
       // 2. 필요 없다면 디스코드 대신 다른 유용한 링크를 넣거나 삭제하세요.
-      "Powered by Quartz": "https://quartz.jzhao.xyz/",        // 핵심 엔진
-      "Crafted with Obsidian": "https://obsidian.md",         // 집필 도구
+      "Built with Quartz": "https://quartz.jzhao.xyz/",        // 핵심 엔진
+      "Content written in Obsidian": "https://obsidian.md",
+      "Hosted on GitHub Pages": "https://pages.github.com/",   // 호스팅
       // "Original by jackyzha0": "https://github.com/jackyzha0/quartz", // 원작자 리스펙트
     },
     // 3. (선택사항) 푸터 텍스트 커스터마이징 
