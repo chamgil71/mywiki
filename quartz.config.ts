@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "MS 연습",
+    pageTitle: "MS wiki",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "ko-KR",
     baseUrl: "chamgil71.github.io/mywiki",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
