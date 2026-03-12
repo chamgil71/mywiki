@@ -1,32 +1,242 @@
 @use "./base.scss";
 
-// put your custom CSS here!
-/* Explorer 높이 제한 및 스크롤 생성 */
-.left {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 100px); // 상단 로고 등을 제외한 전체 높이 확보
-  gap: 1.5rem; // 컴포넌트 간 간격
+// ============================================
+// 🎨 SHIN Knowledge Vault — Clean Tech Theme
+// 파일 위치: quartz/styles/custom.scss
+// ============================================
 
-  // 1. 탐색기: 남은 공간을 모두 차지하되, 내용이 많으면 내부 스크롤
-  .explorer {
-    flex: 1; 
-    min-height: 0; // flex 자식 요소의 최소 높이 제한 해제 (스크롤 활성화 핵심)
-    display: flex;
-    flex-direction: column;
+// --- 전체 타이포그래피 정돈 ---
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
 
-    #explorer-content {
-      overflow-y: auto; // 내부 스크롤 활성화
-      max-height: 100%;
+// --- 페이지 제목 (좌측 사이드바) ---
+.page-title {
+  font-size: 1.1rem !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  opacity: 0.9;
+}
+
+// --- 메인 콘텐츠 영역 ---
+article {
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    border-bottom: none;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--lightgray);
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-top: 1.5em;
+  }
+
+  p {
+    line-height: 1.75;
+    margin-bottom: 1.2em;
+  }
+
+  // 리스트 정돈
+  ul, ol {
+    line-height: 1.7;
+    margin-bottom: 1.2em;
+  }
+
+  // 인라인 코드
+  code:not(pre code) {
+    background: var(--highlight);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-size: 0.88em;
+    font-weight: 500;
+  }
+
+  // 코드 블록
+  pre {
+    border-radius: 8px !important;
+    border: 1px solid var(--lightgray);
+    padding: 1em 1.2em !important;
+    font-size: 0.875rem;
+    line-height: 1.6;
+
+    code {
+      font-size: 0.875rem;
     }
   }
 
-  // 2. 최근 게시물: 아래쪽에 고정하며 최소 높이 보장
-  .recent-notes {
-    flex: 0 0 auto; // 크기 고정
-    border-top: 1px solid var(--lightgray); // 구분선
-    padding-top: 1rem;
-    max-height: 30vh; // 너무 커지지 않게 제한
-    overflow-y: auto;
+  // 블록 인용
+  blockquote {
+    border-left: 3px solid var(--secondary);
+    padding: 0.6em 1.2em;
+    margin: 1.2em 0;
+    background: var(--highlight);
+    border-radius: 0 6px 6px 0;
+
+    p {
+      margin: 0.4em 0;
+    }
+  }
+
+  // 콜아웃 정돈
+  .callout {
+    border-radius: 8px;
+    border: 1px solid var(--lightgray);
+    box-shadow: none;
+    margin: 1.5em 0;
+  }
+
+  // 링크 스타일
+  a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 500;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  // 구분선
+  hr {
+    border: none;
+    border-top: 1px solid var(--lightgray);
+    margin: 2em 0;
+  }
+
+  // 테이블
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    font-size: 0.9rem;
+
+    th {
+      background: var(--highlight);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.6em 0.8em;
+      border-bottom: 2px solid var(--lightgray);
+    }
+
+    td {
+      padding: 0.5em 0.8em;
+      border-bottom: 1px solid var(--lightgray);
+    }
+  }
+}
+
+// --- 사이드바 (Explorer) 깔끔하게 ---
+.explorer {
+  .folder-title, .file-title {
+    font-size: 0.875rem;
+    padding: 0.3em 0;
+  }
+}
+
+// --- 최근 게시물 ---
+.recent-notes {
+  .recent-note {
+    padding: 0.6em 0;
+    border-bottom: 1px solid var(--lightgray);
+
+    .recent-note-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .recent-note-meta {
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+  }
+}
+
+// --- 검색 바 ---
+button#search-button {
+  border-radius: 6px;
+  border: 1px solid var(--lightgray);
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-color: var(--secondary);
+  }
+}
+
+// --- Graph View 배경 정돈 ---
+.graph-outer {
+  border-radius: 8px;
+  border: 1px solid var(--lightgray);
+}
+
+// --- Table of Contents ---
+.toc {
+  font-size: 0.85rem;
+
+  .toc-link {
+    opacity: 0.7;
+    transition: opacity 0.15s ease;
+
+    &:hover, &.active {
+      opacity: 1;
+    }
+  }
+}
+
+// --- 태그 ---
+a.tag-link {
+  font-size: 0.78rem;
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  background: var(--highlight);
+  font-weight: 500;
+}
+
+// --- 푸터 ---
+footer {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  border-top: 1px solid var(--lightgray);
+  padding-top: 1em;
+  margin-top: 3em;
+}
+
+// --- 반응형: 모바일 최적화 ---
+@media (max-width: 800px) {
+  article {
+    h1 {
+      font-size: 1.6rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// --- 다크모드에서 코드 블록 대비 향상 ---
+:root[saved-theme="dark"] {
+  pre {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  code:not(pre code) {
+    background: rgba(255, 255, 255, 0.08);
   }
 }

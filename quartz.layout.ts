@@ -13,7 +13,7 @@ export const sharedPageComponents: SharedLayout = {
       // 2. 필요 없다면 디스코드 대신 다른 유용한 링크를 넣거나 삭제하세요.
       "Powered by Quartz": "https://quartz.jzhao.xyz/",        // 핵심 엔진
       "Crafted with Obsidian": "https://obsidian.md",         // 집필 도구
-      "Original by jackyzha0": "https://github.com/jackyzha0/quartz", // 원작자 리스펙트
+      // "Original by jackyzha0": "https://github.com/jackyzha0/quartz", // 원작자 리스펙트
     },
     // 3. (선택사항) 푸터 텍스트 커스터마이징 
     // Quartz v4에서는 기본적으로 "Created with Quartz"가 붙지만 
@@ -47,10 +47,10 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer(),
     Component.DesktopOnly(Component.Spacer()),
-    Component.RecentNotes({
-      title: "최근 게시물",
-      limit: 5
-    }),
+    //Component.RecentNotes({
+    //  title: "최근 게시물",
+    //  limit: 5
+    //}),
     
   ],
   right: [

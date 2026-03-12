@@ -23,32 +23,32 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "IBM Plex Sans KR",     // 한국어 지원 + 테크 느낌
+        body: "IBM Plex Sans KR",       // 통일감 있는 본문
+        code: "JetBrains Mono",         // 개발자 선호 코드 폰트
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#FAFAFA",             // 약간 따뜻한 흰색 배경
+          lightgray: "#E8E8E8",         // 구분선, 테두리
+          gray: "#A0A0A0",              // 비활성 텍스트
+          darkgray: "#3D3D3D",          // 본문 텍스트
+          dark: "#1A1A1A",              // 제목
+          secondary: "#2563EB",         // 링크, 강조 (블루)
+          tertiary: "#3B82F6",          // 호버, 보조 강조
+          highlight: "rgba(37, 99, 235, 0.06)",  // 코드/인용 배경
+          textHighlight: "#FBBF2488",   // 텍스트 하이라이트
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#0F0F10",             // 진한 배경
+          lightgray: "#1E1E22",         // 구분선
+          gray: "#6B6B6B",              // 비활성 텍스트
+          darkgray: "#CDCDCD",          // 본문 텍스트
+          dark: "#F0F0F0",              // 제목
+          secondary: "#60A5FA",         // 링크 (밝은 블루)
+          tertiary: "#93C5FD",          // 호버
+          highlight: "rgba(96, 165, 250, 0.08)",
+          textHighlight: "#FBBF2488",
         },
       },
     },
