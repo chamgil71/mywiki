@@ -5,6 +5,10 @@ type:
   - report
 created: 2026-02-01
 source: 본문출처, claude
+tags:
+  - AI
+  - stack
+  - 보고서
 ---
 # AX 풀스택 보고서
 ---

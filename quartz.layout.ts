@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import TagCloud from "./quartz/components/TagCloud"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -55,9 +56,10 @@ export const defaultContentPageLayout: PageLayout = {
     
   ],
   right: [
-    Component.Search(),
+    // Component.Search(),
     Component.TagList(),
-    Component.Graph(),
+    // Component.Graph(),
+    TagCloud({}),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

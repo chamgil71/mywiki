@@ -191,7 +191,7 @@ date: {{date:YYYY-MM-DD}}
 ## 감사한 것
 
 ---
-*[[{{date:YYYY-MM-DD|yesterday}}|어제]] | [[{{date:YYYY-MM-DD|tomorrow}}|내일]]*
+*[yesterday}}|어제](/{{date:YYYY-MM-DD) | [tomorrow}}|내일](/{{date:YYYY-MM-DD)*
 ```
 
 > 💡 **TIP:** 데일리 노트는 Templater 플러그인(Chapter 14)과 결합하면 더 강력해집니다. 요일별 다른 템플릿, 자동 날씨 삽입 등의 자동화가 가능합니다.
@@ -210,7 +210,7 @@ date: {{date:YYYY-MM-DD}}
 
 특정 제목 섹션 북마크:
   → 아웃라인 패널에서 제목 우클릭 → [북마크에 추가]
-  → [[노트명#섹션]] 형태로 저장
+  → [노트명#섹션](/노트명) 형태로 저장
 
 검색 결과 북마크:
   → 검색 실행 후 검색 패널 우측 상단 ☆ 아이콘 클릭

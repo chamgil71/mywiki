@@ -5,6 +5,10 @@ type:
   - report
 created: 2026-02-01
 source: 본문출처, claude
+tags:
+  - AI
+  - Safety
+  - 보고서
 ---
 # AI 안전(AI Safety) 종합 분석 보고서
 

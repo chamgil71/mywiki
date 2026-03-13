@@ -167,7 +167,7 @@ created: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 - 예정 안건: 
 
 ---
-*이전 회의: [[<% tp.date.now("YYYY-MM-DD", -7) %>]]*
+*이전 회의: [<% tp.date.now("YYYY-MM-DD", -7) %>](/<% tp.date.now("YYYY-MM-DD", -7) %>)*
 ```
 
 ---
@@ -262,7 +262,7 @@ week: <% tp.date.now("YYYY-[W]ww") %>
 ## 🌟 감사한 것
 
 ---
-← [[<% yesterday %>|어제]] | [[<% tomorrow %>|내일]] →
+← [어제](/<% yesterday %>) | [내일](/<% tomorrow %>) →
 ```
 
 ---
@@ -463,5 +463,5 @@ tR += dayKo + "요일";
 
 ---
 
-*이전 챕터: [Chapter 13 — 속성(Property)과 YAML](./ch13-properties.md)*  
-*다음 챕터: [Chapter 15 — 캔버스(Canvas)](./ch15-canvas.md)*
+*이전 챕터: [Chapter 13 — 속성(Property)과 YAML](ch13-properties.md)*  
+*다음 챕터: [Chapter 15 — 캔버스(Canvas)](ch15-canvas.md)*

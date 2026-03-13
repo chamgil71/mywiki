@@ -93,11 +93,11 @@ FROM ""
 FROM -"90-ARCHIVES"
 
 -- 특정 노트에서 링크된 것
-FROM [[허브 노트]]
-FROM outgoing([[허브 노트]])
+FROM [허브 노트](/허브 노트)
+FROM outgoing([허브 노트](/허브 노트))
 
 -- 특정 노트에 링크된 것 (백링크)
-FROM incoming([[허브 노트]])
+FROM incoming([허브 노트](/허브 노트))
 ```
 
 ---

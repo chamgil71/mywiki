@@ -5,6 +5,9 @@ type:
   - report
 created: 2026-02-01
 source: 본문출처
+tags:
+  - AI
+  - 보고서
 ---
 
 # AI 반도체 산업 전략 보고서

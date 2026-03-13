@@ -240,3 +240,33 @@ footer {
     background: rgba(255, 255, 255, 0.08);
   }
 }
+
+// tag Cloud 설정
+.tag-cloud {
+  margin-top: 1rem;
+}
+
+.tag-cloud ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tag-cloud li {
+  display: inline-block;
+}
+
+.tag-cloud a {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 4px;
+  font-size: 0.85rem;
+  background: var(--light);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.tag-cloud a:hover {
+  background: var(--secondary);
+  color: white;
+}
