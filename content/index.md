@@ -3,26 +3,26 @@ name: My Wiki
 publish: true
 title: SHIN Knowledge Vault
 description: AI · Technology Research
-banner: /mywiki_banner.png
+banner: /static/mywiki_banner.png
+type:
+  - index
 bannerTitle: MS 위키에 오신 것을 환영합니다!
 ---
+![mywiki_banner.png](/assets/image/mywiki_banner.png)
 
-# 👋 안녕하세요! 나의 지식 창고입니다.(test)
+# 👋 안녕하세요! 나의 지식 창고입니다.(test-main)
 
-![[mywiki_banner.png]]
-
-여기에서 제가 공유하는 노트들을 확인하실 수 있습니다.
-
-[[ch01-what-is-obsidian]]  
 
 <div align="center">
 
-# Chamgil Knowledge Vault
+## Chamgil Knowledge Vault
 
 AI · Investing · Technology  
 Personal Knowledge System
 
 </div>
+---
+여기에서 제가 공유하는 노트들을 확인하실 수 있습니다. (메인페이지는 작업중)
 
 ---
 
@@ -33,40 +33,43 @@ Personal Knowledge System
 
 # 📚 Knowledge Areas
 
-## 🤖 AI
+## 🤖 AI 보고서
 
-AI 기술, LLM, 반도체, 산업 분석
+AI 기술, LLM, 반도체, 산업 분석 연습
 
-➡ 
-
----
-
-
-## 📊 Research
-
-보고서 정리 및 리서치 기록
-
-➡ 
+➡ [AI보고서](/index)
 
 ---
 
-## 🧠 Notes
 
-일반 지식 노트 및 메모
+## 📊 기술도서 정리
 
-➡ [[notes/index|Knowledge Notes]]
+IT 기술 학습 자료 기록
 
----
-
-# 🚀 Quick Access
-
-- [[ai]]
-- [[investing]]
-- [[research]]
-- [[notes]]
+➡ [index](/index)
 
 ---
 
-# 🆕 Latest Notes
+## 🧠 오늘의 뉴스
 
-최근 작성된 노트
+내 github 뉴스 사이트
+
+➡ [Daily News](https://chamgil71.github.io/dailynews/index.html)
+
+---
+# 🚀 Tags Access (안됨)
+
+- [ai](/ai)
+- [investing](/investing)
+- [research](/research)
+- [notes](/notes)
+
+---
+# 🆕 관련사이트
+
+내 링크들 
+
+https://chamgil71.github.io/mywiki
+https://chamgil71.github.io/dailynews
+https://mywiki-khaki.vercel.app
+

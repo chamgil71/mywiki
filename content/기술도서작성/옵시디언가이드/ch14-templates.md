@@ -463,5 +463,5 @@ tR += dayKo + "요일";
 
 ---
 
-*이전 챕터: [Chapter 13 — 속성(Property)과 YAML](ch13-properties.md)*  
-*다음 챕터: [Chapter 15 — 캔버스(Canvas)](ch15-canvas.md)*
+*이전 챕터: [Chapter 13 — 속성(Property)과 YAML](./ch13-properties.md)*  
+*다음 챕터: [Chapter 15 — 캔버스(Canvas)](./ch15-canvas.md)*

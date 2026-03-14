@@ -308,7 +308,7 @@ input[type="checkbox"] {
 
 **사용법:**
 ```markdown
-![400](/사진.jpg)
+![사진.jpg](/assets/image/사진.jpg)
 *그림 1. 옵시디언 그래프 뷰 예시*
 ```
 

@@ -240,10 +240,10 @@ Excalidraw에서는 텍스트에 `[노트명](/노트명)` 링크를 직접 삽�
 # 세계관 메인 페이지
 
 ## 캐릭터 관계도
-![캐릭터-관계도.excalidraw](/캐릭터-관계도.excalidraw)
+![캐릭터-관계도.excalidraw](/assets/image/캐릭터-관계도.excalidraw)
 
 또는 크기 지정:
-![600](/캐릭터-관계도.excalidraw)
+![캐릭터-관계도.excalidraw](/assets/image/캐릭터-관계도.excalidraw)
 ```
 
 ---
@@ -311,7 +311,7 @@ Excalidraw 플러그인이 비활성화된 상태입니다. `설정 → 커뮤�
 
 ### Q2. 노트에 임베드한 Excalidraw가 빈 박스로 표시됩니다
 
-Excalidraw 파일이 보관소 내에 있는지 확인하세요. 또한 `![파일명.excalidraw](/파일명.excalidraw)` 에서 파일명과 확장자가 정확한지 확인하세요.
+Excalidraw 파일이 보관소 내에 있는지 확인하세요. 또한 `![파일명.excalidraw](/assets/image/파일명.excalidraw)` 에서 파일명과 확장자가 정확한지 확인하세요.
 
 ### Q3. 도형 안에 텍스트를 입력하려면?
 

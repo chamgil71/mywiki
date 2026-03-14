@@ -256,8 +256,8 @@ WHERE !completed
   또는 명령 팔레트 → "excalidraw" → [새 Excalidraw 그리기]
 
 노트에 Excalidraw 임베드:
-  ![다이어그램.excalidraw](/다이어그램.excalidraw)
-  ![600](/다이어그램.excalidraw)  ← 너비 지정
+  ![다이어그램.excalidraw](/assets/image/다이어그램.excalidraw)
+  ![다이어그램.excalidraw](/assets/image/다이어그램.excalidraw)  ← 너비 지정
 ```
 
 > 📌 **NOTE:** Excalidraw는 Chapter 16에서 전체 챕터로 다룹니다. 지금은 설치 후 도형 몇 개를 그려보며 기본 조작에 익숙해지세요.
