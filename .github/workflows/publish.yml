@@ -1,0 +1,46 @@
+name: publish
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: checkout obsi
+        uses: actions/checkout@v4
+
+      - name: checkout mywiki
+        uses: actions/checkout@v4
+        with:
+          repository: chamgil71/mywiki
+          token: ${{ secrets.MYWIKI_TOKEN }}
+          path: mywiki
+
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: install deps
+        run: |
+          pip install pyyaml python-dotenv
+
+      - name: build publish
+        run: python scripts/vault_publish_build.py
+
+      - name: sync
+        run: python scripts/sync_to_mywiki.py
+
+      - name: push
+        run: |
+          cd mywiki
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add .
+          git commit -m "auto publish" || echo "no changes"
+          git push

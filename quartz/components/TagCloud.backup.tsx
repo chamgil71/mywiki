@@ -1,9 +1,10 @@
-import { QuartzComponentConstructor, QuartzComponentProps } from "./types"  // ← types import에 QuartzComponentProps 추가
+import { QuartzComponentConstructor } from "./types"
+import cfg from "../../quartz.config"  // ← 이 줄 추가 (중요!)
 
 type TagCloudOpts = {}
 
 const TagCloud: QuartzComponentConstructor<TagCloudOpts> = (_opts) => {
-  return function TagCloudComponent({ allFiles, cfg }: QuartzComponentProps) {  // ← 여기 props에 cfg 받기!
+  return ({ allFiles }) => {
 
     const tagMap: Record<string, number> = {}
 
@@ -17,8 +18,9 @@ const TagCloud: QuartzComponentConstructor<TagCloudOpts> = (_opts) => {
 
     const tags = Object.entries(tagMap).sort((a, b) => b[1] - a[1])
 
-    // baseUrl을 cfg에서 안전하게 가져옴
-    const base = cfg.baseUrl ? `/${cfg.baseUrl}` : ""
+    const base = cfg.configuration.baseUrl 
+      ? `/${cfg.configuration.baseUrl}` 
+      : ""
 
     return (
       <div class="tag-cloud">
