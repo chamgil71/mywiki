@@ -1,14 +1,15 @@
 ---
-name: My Wiki
+banner: /static/mywiki_banner.png
+bannerTitle: MS 위키에 오신 것을 환영합니다!
+description: AI · Technology Research
+name: index
 publish: true
 title: SHIN Knowledge Vault
-description: AI · Technology Research
-banner: /static/mywiki_banner.png
 type:
-  - index
-bannerTitle: MS 위키에 오신 것을 환영합니다!
+- index
 ---
-![mywiki_banner.png](/assets/image/mywiki_banner.png)
+
+![](/assets/images/mywiki_banner.png)
 
 # 👋 안녕하세요! 나의 지식 창고입니다.(test-main)
 
@@ -37,7 +38,7 @@ Personal Knowledge System
 
 AI 기술, LLM, 반도체, 산업 분석 연습
 
-➡ [AI보고서](/index)
+➡ [AI보고서](./report/AIreport/)
 
 ---
 
@@ -46,7 +47,7 @@ AI 기술, LLM, 반도체, 산업 분석 연습
 
 IT 기술 학습 자료 기록
 
-➡ [index](/index)
+➡ [기술도서](./techbook/기술도서작성/index)
 
 ---
 
@@ -59,17 +60,18 @@ IT 기술 학습 자료 기록
 ---
 # 🚀 Tags Access (안됨)
 
-- [ai](/ai)
-- [investing](/investing)
-- [research](/research)
-- [notes](/notes)
+- [[ai]]
+- [[investing]]
+- [[research]]
+- [[notes]]
 
 ---
 # 🆕 관련사이트
 
 내 링크들 
 
-https://chamgil71.github.io/mywiki
-https://chamgil71.github.io/dailynews
-https://mywiki-khaki.vercel.app
+- 지금 사이트 : https://chamgil71.github.io/mywiki
+- 뉴스클리핑 : https://chamgil71.github.io/dailynews
+- 지금 사이트(vercel) : https://mywiki-khaki.vercel.app
 
+[AI-roadmap-NIPA-v2.0_scripts.pdf](/assets/docs/AI-roadmap-NIPA-v2.0_scripts.pdf)
