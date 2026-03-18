@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch23 Themes
+tags: []
+title: ch23-themes
 type: techbook
 ---
 

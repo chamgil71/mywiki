@@ -7,7 +7,7 @@ tags:
 - AI
 - stack
 - 보고서
-title: Ax 풀스택 보고서
+title: AX 풀스택 보고서
 type:
 - report
 ---

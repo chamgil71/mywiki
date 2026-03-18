@@ -4,7 +4,7 @@ name: index_tech
 publish: true
 source: 본문출처
 tags: null
-title: Index
+title: _index
 type:
 - techbook
 ---

@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch05 Markdown Basic
+tags: []
+title: ch05-markdown-basic
 type: techbook
 ---
 

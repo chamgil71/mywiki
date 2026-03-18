@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch13 Properties
+tags: []
+title: ch13-properties
 type: techbook
 ---
 

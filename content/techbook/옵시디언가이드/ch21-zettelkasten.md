@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch21 Zettelkasten
+tags: []
+title: ch21-zettelkasten
 type: techbook
 ---
 

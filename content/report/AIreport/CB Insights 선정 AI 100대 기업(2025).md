@@ -6,7 +6,7 @@ source:
 - https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2025/
 tags:
 - AI
-title: Cb Insights 선정 Ai 100대 기업(2025)
+title: CB Insights 선정 AI 100대 기업(2025)
 type:
 - report
 ---

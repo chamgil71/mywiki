@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch20 Reading
+tags: []
+title: ch20-reading
 type: techbook
 ---
 

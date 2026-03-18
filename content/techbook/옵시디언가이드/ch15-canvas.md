@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch15 Canvas
+tags: []
+title: ch15-canvas
 type: techbook
 ---
 

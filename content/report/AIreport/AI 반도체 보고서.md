@@ -6,7 +6,7 @@ source: 본문출처
 tags:
 - AI
 - 보고서
-title: Ai 반도체 보고서
+title: AI 반도체 보고서
 type:
 - report
 ---

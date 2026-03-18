@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch18 Para
+tags: []
+title: ch18-para
 type: techbook
 ---
 

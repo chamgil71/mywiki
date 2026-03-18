@@ -1,11 +1,9 @@
 ---
 banner: /static/mywiki_banner.png
 bannerTitle: MS 위키에 오신 것을 환영합니다!
-created: '2026-02-09'
 description: AI · Technology Research
 name: index
 publish: true
-tags: []
 title: SHIN Knowledge Vault
 type:
 - index

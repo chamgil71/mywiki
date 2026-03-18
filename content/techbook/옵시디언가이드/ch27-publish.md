@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch27 Publish
+tags: []
+title: ch27-publish
 type: techbook
 ---
 

@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch11 Core Plugins
+tags: []
+title: ch11-core-plugins
 type: techbook
 ---
 

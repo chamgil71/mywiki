@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch12 Community Plugins
+tags: []
+title: ch12-community-plugins
 type: techbook
 ---
 

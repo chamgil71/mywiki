@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch07 Links
+tags: []
+title: ch07-links
 type: techbook
 ---
 

@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch22 Dataview
+tags: []
+title: ch22-dataview
 type: techbook
 ---
 

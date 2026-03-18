@@ -6,7 +6,7 @@ source: www.cbinsights.com/research
 tags:
 - AI
 - infra
-title: Ai 데이터센터 벨류체인맵(cbinsights)
+title: AI 데이터센터 벨류체인맵(cbinsights)
 type:
 - report
 ---

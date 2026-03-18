@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch26 Mobile
+tags: []
+title: ch26-mobile
 type: techbook
 ---
 

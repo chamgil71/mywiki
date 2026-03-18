@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch08 Attachments
+tags: []
+title: ch08-attachments
 type: techbook
 ---
 
