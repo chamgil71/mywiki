@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch04 Vault
+tags: []
+title: ch04-vault
 type: techbook
 ---
 

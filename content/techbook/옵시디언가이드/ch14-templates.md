@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch14 Templates
+tags: []
+title: ch14-templates
 type: techbook
 ---
 

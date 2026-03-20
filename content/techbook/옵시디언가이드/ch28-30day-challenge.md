@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch28 30day Challenge
+tags: []
+title: ch28-30day-challenge
 type: techbook
 ---
 

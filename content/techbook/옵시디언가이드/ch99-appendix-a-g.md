@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch99 Appendix A G
+tags: []
+title: ch99-appendix-a-g
 type: techbook
 ---
 

@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch16 Excalidraw
+tags: []
+title: ch16-excalidraw
 type: techbook
 ---
 

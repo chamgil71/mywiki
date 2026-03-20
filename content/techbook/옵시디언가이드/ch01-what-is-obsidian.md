@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch01 What Is Obsidian
+tags: []
+title: ch01-what-is-obsidian
 type: techbook
 ---
 

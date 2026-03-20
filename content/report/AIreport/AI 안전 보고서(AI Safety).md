@@ -7,7 +7,7 @@ tags:
 - AI
 - Safety
 - 보고서
-title: Ai 안전 보고서(ai Safety)
+title: AI 안전 보고서(AI Safety)
 type:
 - report
 ---

@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch03 Interface
+tags: []
+title: ch03-interface
 type: techbook
 ---
 

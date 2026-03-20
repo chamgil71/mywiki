@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch19 Gtd
+tags: []
+title: ch19-gtd
 type: techbook
 ---
 

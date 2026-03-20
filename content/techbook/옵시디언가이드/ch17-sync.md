@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch17 Sync
+tags: []
+title: ch17-sync
 type: techbook
 ---
 

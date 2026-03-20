@@ -5,7 +5,7 @@ publish: true
 source: 본문출처
 tags:
 - AI
-title: Index
+title: _index
 type:
 - report
 ---

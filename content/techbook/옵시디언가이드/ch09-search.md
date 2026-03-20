@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch09 Search
+tags: []
+title: ch09-search
 type: techbook
 ---
 

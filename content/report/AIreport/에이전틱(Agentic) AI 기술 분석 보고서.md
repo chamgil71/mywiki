@@ -7,7 +7,7 @@ tags:
 - AI
 - agentic
 - 보고서
-title: 에이전틱(agentic) Ai 기술 분석 보고서
+title: 에이전틱(Agentic) AI 기술 분석 보고서
 type:
 - report
 ---

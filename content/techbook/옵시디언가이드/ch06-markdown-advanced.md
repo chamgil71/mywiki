@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch06 Markdown Advanced
+tags: []
+title: ch06-markdown-advanced
 type: techbook
 ---
 

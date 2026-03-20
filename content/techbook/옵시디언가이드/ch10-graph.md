@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch10 Graph
+tags: []
+title: ch10-graph
 type: techbook
 ---
 

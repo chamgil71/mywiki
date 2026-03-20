@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch25 Css Snippets
+tags: []
+title: ch25-css-snippets
 type: techbook
 ---
 

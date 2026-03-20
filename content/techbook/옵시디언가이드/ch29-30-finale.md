@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch29 30 Finale
+tags: []
+title: ch29-30-finale
 type: techbook
 ---
 

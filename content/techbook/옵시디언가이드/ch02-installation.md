@@ -3,7 +3,8 @@ created:
   '{ date }': null
 publish: true
 status: 진행중
-title: Ch02 Installation
+tags: []
+title: ch02-installation
 type: techbook
 ---
 
