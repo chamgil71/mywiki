@@ -17,8 +17,8 @@ const config: QuartzConfig = {
     },
     locale: "ko-KR",
     baseUrl: process.env.VERCEL 
-      ? "mywiki-khaki.vercel.app"        // Vercel 환경
-      : "chamgil71.github.io/mywiki",    // GitHub Pages 환경
+      ? ""        // Vercel 환경
+      : "mywiki",    // GitHub Pages 환경
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
