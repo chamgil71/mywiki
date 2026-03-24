@@ -49,10 +49,10 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer(),
     Component.DesktopOnly(Component.Spacer()),
-    //Component.RecentNotes({
-    //  title: "최근 게시물",
-    //  limit: 5
-    //}),
+    Component.RecentNotes({
+      title: "최근 게시물",
+      limit: 5
+    }),
     
   ],
   right: [
