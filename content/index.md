@@ -40,19 +40,16 @@ Personal Knowledge System
 
 AI 기술, LLM, 반도체, 산업 분석 연습
 
-➡ [AI보고서](./AIreport/index)
+➡ [AI보고서](./report/AIreport/index)
 
 ---
-
-
 ## 📊 기술도서 정리
 
 IT 기술 학습 자료 기록
 
-➡ [기술도서](./기술도서작성/index|)
+➡ [기술도서](./techbook/기술도서작성/index|)
 
 ---
-
 ## 🧠 오늘의 뉴스
 
 내 github 뉴스 사이트

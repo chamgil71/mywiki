@@ -1,5 +1,6 @@
 ---
 created: 2026-02-01
+modified: 2026-02-01
 name: AgenticAI
 publish: true
 source: 본문출처

@@ -1,6 +1,7 @@
 ---
 created:
   '{ date }': null
+modified: 2026-01-01
 publish: true
 status: 진행중
 tags: []
