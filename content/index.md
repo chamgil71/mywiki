@@ -34,38 +34,30 @@ Personal Knowledge System
 
 ---
 
-# 📚 Knowledge Areas
+## 📚 Knowledge Areas
 
-## 🤖 AI 보고서
+### 🤖 AI 보고서
 
 AI 기술, LLM, 반도체, 산업 분석 연습
 
 ➡ [AI보고서](./report/AIreport/index)
 
 ---
-## 📊 기술도서 정리
+### 📊 기술도서 정리
 
 IT 기술 학습 자료 기록
 
 ➡ [기술도서](./techbook/기술도서작성/index|)
 
 ---
-## 🧠 오늘의 뉴스
+### 🧠 오늘의 뉴스
 
 내 github 뉴스 사이트
 
 ➡ [Daily News](https://chamgil71.github.io/dailynews/index.html)
 
 ---
-# 🚀 Tags Access (안됨)
-
-- [[ai]]
-- [[investing]]
-- [[research]]
-- [[notes]]
-
----
-# 🆕 관련사이트
+## 🆕 관련사이트
 
 내 링크들 
 
@@ -73,4 +65,19 @@ IT 기술 학습 자료 기록
 - 뉴스클리핑 : https://chamgil71.github.io/dailynews
 - 지금 사이트(vercel) : https://mywiki-khaki.vercel.app
 
-[(발표자료_스크립트)AI고속도로를 위한 NIPA사업추진방향(최종 수정본)2.0.pdf](/assets/docs/%28%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C_%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%29AI%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20NIPA%EC%82%AC%EC%97%85%EC%B6%94%EC%A7%84%EB%B0%A9%ED%96%A5%28%EC%B5%9C%EC%A2%85%20%EC%88%98%EC%A0%95%EB%B3%B8%292.0.pdf)
+---
+## 🆕 자료 목록
+
+- [25년11월7일ESG컨퍼런스발표자료](/assets/docs/251107aihighway_%EB%94%94%EC%A7%80%ED%84%B8ESG.pdf)
+- [260402발표예정자료](/assets/docs/260313_NIPAAI%EC%82%AC%EC%97%85%EC%A7%80%EC%9B%90%EB%B0%A9%ED%96%A5%28%EB%B0%9C%ED%91%9C%29.pdf)
+- 
+
+
+
+---
+### 🚀 Tags Access (안됨)
+
+- [[ai]]
+- [[investing]]
+- [[research]]
+- [[notes]]
