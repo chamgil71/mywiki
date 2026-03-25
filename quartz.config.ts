@@ -10,15 +10,15 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "MS wiki",
     pageTitleSuffix: "",
-    enableSPA: true,
+    enableSPA: false,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "ko-KR",
     baseUrl: process.env.VERCEL 
-      ? process.env.VERCEL        // Vercel 환경
-      : "chamgil71.github.io/mywiki",    // GitHub Pages 환경
+      ? "mywiki-khaki.vercel.app"        // Vercel 환경
+      : "chamgil71.github.io",    // GitHub Pages 환경
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -76,8 +76,8 @@ const config: QuartzConfig = {
       Plugin.Latex({ renderEngine: "katex" }),
     ],
     filters: [
-	  Plugin.RemoveDrafts(),
-      Plugin.ExplicitPublish(), // publish: true가 있는 파일만 발행
+	    Plugin.RemoveDrafts(),
+      // Plugin.ExplicitPublish(), // publish: true가 있는 파일만 발행
     ],
     emitters: [
       Plugin.AliasRedirects(),

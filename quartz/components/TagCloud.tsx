@@ -26,7 +26,7 @@ const TagCloud: QuartzComponentConstructor<TagCloudOpts> = (_opts) => {
         <ul>
           {tags.map(([tag, count]) => (
             <li>
-              <a href={`${base}/tags/${tag}`}>
+              <a href={`https://${base}/tags/${tag}`}>
                 {tag} ({count})
               </a>
             </li>
