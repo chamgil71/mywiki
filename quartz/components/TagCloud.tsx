@@ -1,10 +1,11 @@
-import { QuartzComponentConstructor, QuartzComponentProps } from "./types"  // ← types import에 QuartzComponentProps 추가
+import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { resolveRelative, SimpleSlug } from "../../quartz/util/path"
 
 type TagCloudOpts = {}
 
 const TagCloud: QuartzComponentConstructor<TagCloudOpts> = (_opts) => {
-  return function TagCloudComponent({ allFiles, cfg }: QuartzComponentProps) {  // ← 여기 props에 cfg 받기!
-
+  // 에러 3, 4, 5 해결: 필요한 props인 fileData, allFiles, displayClass를 모두 정확히 받아옵니다. (안 쓰는 cfg는 제거)
+  return function TagCloudComponent({ fileData, allFiles, displayClass }: QuartzComponentProps) { 
     const tagMap: Record<string, number> = {}
 
     for (const file of allFiles) {
@@ -17,20 +18,22 @@ const TagCloud: QuartzComponentConstructor<TagCloudOpts> = (_opts) => {
 
     const tags = Object.entries(tagMap).sort((a, b) => b[1] - a[1])
 
-    // baseUrl을 cfg에서 안전하게 가져옴
-    const base = cfg.baseUrl ? `/${cfg.baseUrl}` : ""
-
     return (
-      <div class="tag-cloud">
+      <div class={`tag-cloud ${displayClass ?? ""}`}>
         <h3>Tags</h3>
         <ul>
-          {tags.map(([tag, count]) => (
-            <li>
-              <a href={`https://${base}/tags/${tag}`}>
-                {tag} ({count})
-              </a>
-            </li>
-          ))}
+          {tags.map(([tag, count]) => {
+            // 핵심: 현재 위치(fileData.slug)를 기준으로 태그의 상대 경로를 자동 계산합니다.
+            const tagHref = resolveRelative(fileData.slug!, `tags/${tag}` as SimpleSlug)
+            
+            return (
+              <li>
+                <a href={tagHref}>
+                  {tag} ({count})
+                </a>
+              </li>
+            )
+          })}
         </ul>
       </div>
     )
