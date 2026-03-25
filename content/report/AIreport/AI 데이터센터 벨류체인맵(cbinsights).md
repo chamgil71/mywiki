@@ -1,5 +1,6 @@
 ---
 created: 2026-02-12
+modified: 2026-02-12
 name: AIdatacenter
 publish: true
 source: www.cbinsights.com/research

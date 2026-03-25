@@ -1,5 +1,6 @@
 ---
 created: 2026-03-24
+modified: 2026-03-24
 publish: true
 source: 본문출처, 퍼플랙시티
 tags:
