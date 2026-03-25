@@ -47,11 +47,14 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folderDefaultState: "collapsed",
+    }),
     Component.DesktopOnly(Component.Spacer()),
     Component.RecentNotes({
       title: "최근 게시물",
-      limit: 5
+      limit: 5,
+      showTags: false,
     }),
     
   ],
