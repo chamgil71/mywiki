@@ -159,11 +159,11 @@ article {
 
     .recent-note-title {
       font-weight: 600;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
     }
 
     .recent-note-meta {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       opacity: 0.6;
     }
   }
@@ -269,10 +269,6 @@ footer {
 .tag-cloud a:hover {
   background: var(--secondary);
   color: white;
-}
-
-.recent-notes .meta {
-  display: none;
 }
 
 .recent-notes .tags {
