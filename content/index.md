@@ -64,12 +64,15 @@ IT 기술 학습 자료 기록
 - 지금 사이트 : https://chamgil71.github.io/mywiki
 - 뉴스클리핑 : https://chamgil71.github.io/dailynews
 - 지금 사이트(vercel) : https://mywiki-khaki.vercel.app
+- 뉴스클리핑(vercel) : https://ms-dailynews.vercel.app/
 
 ---
 ## 🆕 자료 목록
 
 - [25년11월7일ESG컨퍼런스발표자료](/assets/docs/251107aihighway_%EB%94%94%EC%A7%80%ED%84%B8ESG.pdf)
-- [260402발표예정자료](/assets/docs/260313_NIPAAI%EC%82%AC%EC%97%85%EC%A7%80%EC%9B%90%EB%B0%A9%ED%96%A5%28%EB%B0%9C%ED%91%9C%29.pdf)
+- 
+- [260402 발표 예정 자료](/assets/docs/260313_NIPAAI%EC%82%AC%EC%97%85%EC%A7%80%EC%9B%90%EB%B0%A9%ED%96%A5%28%EB%B0%9C%ED%91%9C%29.pdf)
+- 
 - 
 
 
