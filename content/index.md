@@ -65,6 +65,7 @@ IT 기술 학습 자료 기록
 - 뉴스클리핑 : https://chamgil71.github.io/dailynews
 - 지금 사이트(vercel) : https://mywiki-khaki.vercel.app
 - 뉴스클리핑(vercel) : https://ms-dailynews.vercel.app/
+- 버젯N(vercel) : https://budget-n.vercel.app/
 
 ---
 ## 🆕 자료 목록
