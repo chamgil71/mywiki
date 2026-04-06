@@ -1,72 +1,103 @@
 @use "./base.scss";
 
-// 1. 전체 본문 크기 상향 (강제 적용)
-body, article, .popover {
+// 1. 본문 텍스트 크기 상향 (문서 본문 article 영역만 한정)
+article {
   font-size: 1.15rem !important; 
   line-height: 1.8 !important;
+
+  p, li {
+    font-size: 1.15rem !important;
+  }
 }
 
-// 2. 왼쪽 사이드바 (Explorer 확장 & RecentNotes 축소)
+// 2. 왼쪽 사이드바 레이아웃 정돈
 .left.sidebar {
   display: flex !important;
   flex-direction: column !important;
-  gap: 1rem;
 
-  // 탐색기를 강제로 키움
+  // 탐색기 (Explorer): 공간을 많이 차지하도록
   .explorer {
-    flex: 1 0 auto !important; // 남는 공간을 모두 차지
+    flex: 1 1 auto !important;
     max-height: 60vh !important;
     overflow-y: auto !important;
-    
-    // 스크롤바 디자인 (선택)
-    &::-webkit-scrollbar { width: 4px; }
-    &::-webkit-scrollbar-thumb { background: var(--lightgray); border-radius: 4px; }
+    margin-bottom: 2rem;
+
+    .folder-title, .file-title {
+      font-size: 0.9rem !important; // 탐색기 글자는 본문보다 작게 유지
+    }
   }
 
-  // 최근 게시물을 아래로 밀고 높이 제한
+  // 최근 게시물 (Recent Notes): 아래쪽에 작게 고정
   .recent-notes {
     flex: 0 0 auto !important;
     max-height: 250px !important;
     overflow-y: auto !important;
     border-top: 1px solid var(--lightgray);
     padding-top: 1rem;
-    margin-top: auto; // 맨 아래로 밀착
+
+    .recent-note-title {
+      font-size: 0.85rem !important;
+    }
   }
 }
 
-// 3. 오른쪽 사이드바 (TOC 스크롤 및 위치)
+// 3. 오른쪽 사이드바 정돈 (목차 및 태그 클라우드)
 .right.sidebar {
+  // 목차(TOC) 글자 크기 축소 및 스크롤바 생성
   .toc {
-    max-height: 50vh !important; // 화면 절반까지만 차지
-    overflow-y: auto !important; // 이 설정이 있어야 스크롤바가 생깁니다
+    max-height: 350px !important;
+    overflow-y: auto !important;
+    font-size: 0.85rem !important; // 목차 글자를 작게 고정
     margin-bottom: 2rem;
-    
-    &::-webkit-scrollbar { width: 4px; }
-    &::-webkit-scrollbar-thumb { background: var(--lightgray); }
-  }
-}
 
-// 4. 본문 제목들 크기 조정
-article {
-  h1 { font-size: 2.5rem !important; margin-bottom: 1rem !important; }
-  h2 { font-size: 1.8rem !important; border-bottom: 1px solid var(--lightgray); }
-  p { margin-bottom: 1.5rem !important; }
-}
+    li, a {
+      font-size: 0.85rem !important;
+      line-height: 1.4 !important;
+    }
 
-// 오른쪽 사이드바 (TOC) 강제 설정
-.right {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 2rem;
-
-  .toc {
-    order: -1 !important;    // 요소를 맨 위로 강제 이동
-    max-height: 400px !important; // 높이 제한
-    overflow-y: auto !important;  // 스크롤바 활성화
-    padding-right: 10px;
-
-    // 스크롤바 시각화
     &::-webkit-scrollbar { width: 4px; }
     &::-webkit-scrollbar-thumb { background: var(--lightgray); border-radius: 4px; }
   }
+
+  // 태그 클라우드 (Tag Cloud): 다시 가로 배치 구름 형태로 복구
+  .tag-cloud {
+    ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 8px !important;
+    }
+
+    li {
+      display: inline-block !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      
+      // 불렛 점(•) 강제 제거
+      &:before { content: none !important; }
+    }
+
+    a {
+      display: inline-block !important;
+      padding: 4px 10px !important;
+      font-size: 0.8rem !important; // 태그 글자 크기
+      background: var(--highlight) !important;
+      border-radius: 8px !important;
+      text-decoration: none !important;
+      color: var(--secondary) !important;
+
+      &:hover {
+        background: var(--secondary) !important;
+        color: white !important;
+      }
+    }
+  }
+}
+
+// 4. 전역 리스트 스타일 간섭 방지
+.sidebar ul, .sidebar li {
+  list-style: none !important;
+  text-indent: 0 !important;
 }
