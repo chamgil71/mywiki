@@ -13,7 +13,7 @@ type:
 
 ![](/assets/images/mywiki_banner.png)
 
-# 👋 안녕하세요! 나의 지식 창고입니다.(test-main)
+# 👋 안녕하세요! 지식 창고입니다. (test-main)
 
 
 <div align="center">
@@ -25,6 +25,7 @@ Personal Knowledge System
 
 </div>
 ---
+
 여기에서 제가 공유하는 노트들을 확인하실 수 있습니다. (메인페이지는 작업중)
 
 ---
@@ -66,6 +67,7 @@ IT 기술 학습 자료 기록
 - 지금 사이트(vercel) : https://mywiki-khaki.vercel.app
 - 뉴스클리핑(vercel) : https://ms-dailynews.vercel.app/
 - 버젯N(vercel) : https://budget-n.vercel.app/
+- 기업풀분석(vercel) : https://companypool.vercel.app  (현재미오픈)
 
 ---
 ## 🆕 자료 목록
@@ -79,7 +81,7 @@ IT 기술 학습 자료 기록
 
 
 ---
-### 🚀 Tags Access (안됨)
+### 🚀 Tags Access (우측 tags로 접근, 하단메뉴 안됨)
 
 - [[ai]]
 - [[investing]]
