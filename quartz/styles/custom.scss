@@ -5,11 +5,12 @@
 // 파일 위치: quartz/styles/custom.scss
 // ============================================
 
-// --- 전체 타이포그래피 정돈 ---
+// --- 전체 타이포그래피 및 본문 크기 상향 ---
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.01em;
+  font-size: 1.1rem; // 기본 폰트 사이즈 상향
 }
 
 // --- 페이지 제목 (좌측 사이드바) ---
@@ -20,10 +21,13 @@ body {
   opacity: 0.9;
 }
 
-// --- 메인 콘텐츠 영역 ---
+// --- 메인 콘텐츠 영역 (본문 글자 크기 조정) ---
 article {
+  font-size: 1.1rem; // 본문 글자 크기 확대
+  line-height: 1.75;
+
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem; // 제목 크기 소폭 상향
     font-weight: 800;
     letter-spacing: -0.03em;
     line-height: 1.2;
@@ -32,7 +36,7 @@ article {
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: -0.02em;
     margin-top: 2em;
@@ -42,21 +46,21 @@ article {
   }
 
   h3 {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: -0.01em;
     margin-top: 1.5em;
   }
 
   p {
-    line-height: 1.75;
-    margin-bottom: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
   }
 
   // 리스트 정돈
   ul, ol {
-    line-height: 1.7;
-    margin-bottom: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
   }
 
   // 인라인 코드
@@ -64,7 +68,7 @@ article {
     background: var(--highlight);
     padding: 0.15em 0.4em;
     border-radius: 4px;
-    font-size: 0.88em;
+    font-size: 0.9em;
     font-weight: 500;
   }
 
@@ -73,11 +77,11 @@ article {
     border-radius: 8px !important;
     border: 1px solid var(--lightgray);
     padding: 1em 1.2em !important;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     line-height: 1.6;
 
     code {
-      font-size: 0.875rem;
+      font-size: 0.9rem;
     }
   }
 
@@ -93,79 +97,54 @@ article {
       margin: 0.4em 0;
     }
   }
-
-  // 콜아웃 정돈
-  .callout {
-    border-radius: 8px;
-    border: 1px solid var(--lightgray);
-    box-shadow: none;
-    margin: 1.5em 0;
-  }
-
-  // 링크 스타일
-  a {
-    text-decoration: none;
-    color: var(--secondary);
-    font-weight: 500;
-    transition: opacity 0.15s ease;
-
-    &:hover {
-      opacity: 0.75;
-    }
-  }
-
-  // 구분선
-  hr {
-    border: none;
-    border-top: 1px solid var(--lightgray);
-    margin: 2em 0;
-  }
-
-  // 테이블
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 1.5em 0;
-    font-size: 0.9rem;
-
-    th {
-      background: var(--highlight);
-      font-weight: 600;
-      text-align: left;
-      padding: 0.6em 0.8em;
-      border-bottom: 2px solid var(--lightgray);
-    }
-
-    td {
-      padding: 0.5em 0.8em;
-      border-bottom: 1px solid var(--lightgray);
-    }
-  }
 }
 
-// --- 사이드바 (Explorer) 깔끔하게 ---
+// --- 사이드바 레이아웃: 탐색기 vs 최근 게시물 비율 조정 ---
+
+// 1. 탐색기 (Explorer): 공간을 많이 차지하도록 설정
 .explorer {
+  flex: 3;           // 최근 게시물보다 3배 더 많은 가중치
+  max-height: 65vh;  // 화면 높이의 65%까지 사용 가능
+  overflow-y: auto;  // 내용이 많으면 내부 스크롤
+  margin-bottom: 1.5rem;
+  padding-right: 0.5rem;
+
   .folder-title, .file-title {
-    font-size: 0.875rem;
-    padding: 0.3em 0;
+    font-size: 0.95rem; // 글자 크기 소폭 상향
+    padding: 0.35em 0;
   }
 }
 
-// --- 최근 게시물 ---
+// 2. 최근 게시물 (Recent Notes): 높이를 제한하고 넘치면 스크롤
 .recent-notes {
+  flex: 1;           // 최소한의 공간만 차지
+  max-height: 280px; // 위젯 전체 높이를 280px로 제한
+  overflow-y: auto;  // 목록이 많아지면 위젯 안에서 스크롤
+  border-top: 1px solid var(--lightgray);
+  padding-top: 1rem;
+
   .recent-note {
-    padding: 0.6em 0;
+    padding: 0.5em 0;
     border-bottom: 1px solid var(--lightgray);
 
     .recent-note-title {
-      font-weight: 600;
-      font-size: 0.75rem;
+      font-weight: 500;
+      font-size: 0.85rem; // 가독성을 위해 0.7 -> 0.85로 상향
+      margin-bottom: 0.2rem;
+      display: block;
     }
 
     .recent-note-meta {
-      font-size: 0.6rem;
+      font-size: 0.75rem;
       opacity: 0.6;
     }
+  }
+
+  // 불필요한 태그/리스트 스타일 정리
+  .tags { display: none; }
+  li { 
+    list-style: none; 
+    font-size: 0.85rem;
   }
 }
 
@@ -180,27 +159,21 @@ button#search-button {
   }
 }
 
-// --- Graph View 배경 정돈 ---
+// --- 기타 위젯 정돈 ---
 .graph-outer {
   border-radius: 8px;
   border: 1px solid var(--lightgray);
 }
 
-// --- Table of Contents ---
 .toc {
   font-size: 0.85rem;
-
   .toc-link {
     opacity: 0.7;
     transition: opacity 0.15s ease;
-
-    &:hover, &.active {
-      opacity: 1;
-    }
+    &:hover, &.active { opacity: 1; }
   }
 }
 
-// --- 태그 ---
 a.tag-link {
   font-size: 0.78rem;
   padding: 0.2em 0.6em;
@@ -209,7 +182,6 @@ a.tag-link {
   font-weight: 500;
 }
 
-// --- 푸터 ---
 footer {
   font-size: 0.8rem;
   opacity: 0.5;
@@ -218,63 +190,37 @@ footer {
   margin-top: 3em;
 }
 
-// --- 반응형: 모바일 최적화 ---
+// --- 반응형 및 다크모드 ---
 @media (max-width: 800px) {
   article {
-    h1 {
-      font-size: 1.6rem;
-    }
-    h2 {
-      font-size: 1.2rem;
-    }
+    font-size: 1rem;
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
   }
 }
 
-// --- 다크모드에서 코드 블록 대비 향상 ---
 :root[saved-theme="dark"] {
-  pre {
-    border-color: rgba(255, 255, 255, 0.08);
-  }
-
-  code:not(pre code) {
-    background: rgba(255, 255, 255, 0.08);
-  }
+  pre { border-color: rgba(255, 255, 255, 0.1); }
+  code:not(pre code) { background: rgba(255, 255, 255, 0.1); }
 }
 
-// tag Cloud 설정
+// Tag Cloud 설정
 .tag-cloud {
   margin-top: 1rem;
-}
-
-.tag-cloud ul {
-  list-style: none;
-  padding: 0;
-}
-
-.tag-cloud li {
-  display: inline-block;
-}
-
-.tag-cloud a {
-  display: inline-block;
-  padding: 4px 10px;
-  margin: 4px;
-  font-size: 0.85rem;
-  background: var(--light);
-  border-radius: 12px;
-  text-decoration: none;
-  transition: all 0.15s ease;
-}
-
-.tag-cloud a:hover {
-  background: var(--secondary);
-  color: white;
-}
-
-.recent-notes .tags {
-  display: none;
-}
-
-.recent-notes li {
-  font-size: 0.85rem;
+  ul { list-style: none; padding: 0; }
+  li { display: inline-block; }
+  a {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 4px;
+    font-size: 0.85rem;
+    background: var(--light);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    &:hover {
+      background: var(--secondary);
+      color: white;
+    }
+  }
 }

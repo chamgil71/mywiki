@@ -59,11 +59,11 @@ export const defaultContentPageLayout: PageLayout = {
     
   ],
   right: [
+    Component.DesktopOnly(Component.TableOfContents()),
     // Component.Search(),
     Component.TagList(),
     // Component.Graph(),
     TagCloud({}),
-    Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
 }
