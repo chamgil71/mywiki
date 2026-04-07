@@ -1,7 +1,7 @@
 ---
 created: 2026-04-06
 modified: 2026-04-06
-name: AI npu
+name: AI npu 분석 자료 초안
 publish: true
 source: 본문출처, gemini, plexity
 tags:
@@ -9,7 +9,7 @@ tags:
 - infra
 - npu
 - 보고서
-title: 2026 AI npu
+title: 2026 AI npu2026 AI 반도체(NPU) 분석 자료(초안)
 type:
 - report
 ---
