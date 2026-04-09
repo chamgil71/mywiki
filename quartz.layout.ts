@@ -51,11 +51,11 @@ export const defaultContentPageLayout: PageLayout = {
       folderDefaultState: "collapsed",
     }),
     Component.DesktopOnly(Component.Spacer()),
-    Component.RecentNotes({
+    Component.DesktopOnly(Component.RecentNotes({
       title: "최근 게시물",
-      limit: 5,
+      limit: 4,
       showTags: false,
-    }),
+    })),
     
   ],
   right: [

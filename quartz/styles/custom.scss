@@ -7,6 +7,7 @@ article {
 
   p, li {
     font-size: 1.15rem !important;
+    margin-bottom: 1.2em;
   }
 }
 
@@ -33,7 +34,7 @@ article {
     max-height: 250px !important;
     overflow-y: auto !important;
     border-top: 1px solid var(--lightgray);
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 
     .recent-note-title {
       font-size: 0.85rem !important;
@@ -47,7 +48,7 @@ article {
   .toc {
     max-height: 350px !important;
     overflow-y: auto !important;
-    font-size: 0.85rem !important; // 목차 글자를 작게 고정
+    font-size: 0.9rem !important; // 목차 글자
     margin-bottom: 2rem;
 
     li, a {
