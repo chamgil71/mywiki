@@ -26,12 +26,13 @@ Personal Knowledge System
 </div>
 ---
 
-여기에서 제가 공유하는 노트들을 확인하실 수 있습니다. (메인페이지는 작업중)
+여기에서 제가 공유하는 노트들을 확인하실 수 있습니다.
 
 ---
 
 > [!info]
-> 개인 노트, 투자 분석, 기술 기록을 정리하는 Knowledge Base입니다.
+> 개인 노트, 동향 분석, 기술 기록을 정리하는 Knowledge Base입니다.
+> 여기에 작성된 분석 자료는 AI 프롬프트를 통해 만들어지는 내용이 대부분입니다. 
 
 ---
 
@@ -74,11 +75,8 @@ IT 기술 학습 자료 기록
 
 - [25년11월7일ESG컨퍼런스발표자료](/assets/docs/251107aihighway_%EB%94%94%EC%A7%80%ED%84%B8ESG.pdf)
 - 
-- [260402 발표 예정 자료](/assets/docs/260313_NIPAAI%EC%82%AC%EC%97%85%EC%A7%80%EC%9B%90%EB%B0%A9%ED%96%A5%28%EB%B0%9C%ED%91%9C%29.pdf)
+- [26년 04월 02일 발표 자료](/assets/docs/260313_NIPAAI%EC%82%AC%EC%97%85%EC%A7%80%EC%9B%90%EB%B0%A9%ED%96%A5%28%EB%B0%9C%ED%91%9C%29.pdf)
 - 
-- 
-
-
 
 ---
 ### 🚀 Tags Access (우측 tags로 접근, 하단메뉴 안됨)
