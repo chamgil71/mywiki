@@ -1,12 +1,15 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import TagCloud from "./quartz/components/TagCloud"
+import Giscus from "./quartz/components/Giscus"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Giscus(), // 👈 컴포넌트를 여기에 주입합니다.
+  ],
   footer: Component.Footer({
     links: {
       // 1. 본인의 GitHub 저장소 주소로 변경
@@ -66,6 +69,7 @@ export const defaultContentPageLayout: PageLayout = {
     TagCloud({}),
     Component.Backlinks(),
   ],
+      
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
