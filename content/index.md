@@ -66,9 +66,10 @@ IT 기술 학습 자료 기록
 - 지금 사이트 : https://chamgil71.github.io/mywiki
 - 뉴스클리핑 : https://chamgil71.github.io/dailynews
 - 지금 사이트(vercel) : https://mywiki-khaki.vercel.app
-- 뉴스클리핑(vercel) : https://ms-dailynews.vercel.app/
+- 뉴스클리핑(vercel) : https://ms-dailynews.vercel.app
 - 버젯N(vercel) : https://budget-n.vercel.app/
-- 기업풀분석(vercel) : https://companypool.vercel.app  (현재미오픈)
+- 기업풀분석(vercel) : https://companypool.vercel.app  
+- 과제정보(vercel) : https://pjtoverview.vercel.app
 
 ---
 ## 🆕 자료 목록
