@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/ai/dailynews/**)",
+      "Read(//c/ai/creative-spark/**)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('name:', d.get\\('name'\\), '\\\\nscripts:', d.get\\('scripts'\\)\\)\")"
+    ]
+  }
+}
