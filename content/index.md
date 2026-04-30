@@ -11,6 +11,8 @@ type:
 - index
 ---
 
+![](/assets/images/mywiki_banner.png)
+
 # 👋 안녕하세요! 지식 창고입니다. (test-main)
 
 
@@ -24,13 +26,9 @@ Personal Knowledge System
 </div>
 ---
 
-여기에서 제가 공유하는 노트들을 확인하실 수 있습니다.
-
----
-
-> [!info]
+> [!notice]
 > 개인 노트, 동향 분석, 기술 기록을 정리하는 Knowledge Base입니다.
-> 여기에 작성된 분석 자료는 AI 프롬프트를 통해 만들어지는 내용이 대부분입니다. 
+> 여기 작성된 자료는 대부분 'AI 프롬프트'를 통해 만들어진 내용입니다. 
 
 ---
 
@@ -47,7 +45,7 @@ AI 기술, LLM, 반도체, 산업 분석 연습
 
 IT 기술 학습 자료 기록
 
-➡ [기술도서](./techbook/기술도서작성/index|)
+➡ [기술도서](./techbook/index)
 
 ---
 ### 🧠 오늘의 뉴스
@@ -80,6 +78,6 @@ IT 기술 학습 자료 기록
 ---
 ### 🚀 Tags Access
 
-- [[tags/ai]]
-- [[report]]
-- [[note]]
+- [[tags/AI|태그: AI]]
+- [[report/AIreport|AIreport]]
+- [[note|자료정리]]
