@@ -2,12 +2,12 @@
 
 // 1. 본문 텍스트 크기 상향 (문서 본문 article 영역만 한정)
 article {
-  font-size: 1.15rem !important; 
-  line-height: 1.8 !important;
+  font-size: 1.1rem !important; 
+  line-height: 1.9 !important;
 
   p, li {
-    font-size: 1.15rem !important;
-    margin-bottom: 1.2em;
+    font-size: 1.1rem !important;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -37,7 +37,7 @@ article {
     padding-top: 0.5rem;
 
     .recent-note-title {
-      font-size: 0.85rem !important;
+      font-size: 0.8rem !important;
     }
   }
 }
