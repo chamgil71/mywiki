@@ -74,7 +74,8 @@ IT 기술 학습 자료 기록
 
 - [26년 04월 02일 발표 자료](/assets/docs/260313_NIPAAI%EC%82%AC%EC%97%85%EC%A7%80%EC%9B%90%EB%B0%A9%ED%96%A5%28%EB%B0%9C%ED%91%9C%29.pdf)
 
-- [ai_guide_standalone](C:\obsidian\msshin\90-Assets\ai_guide_standalone.html)
+- [ai_guide_standalone.html](/assets/docs/ai_guide_standalone.html)
+
  
 
 ---
