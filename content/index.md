@@ -76,6 +76,12 @@ IT 기술 학습 자료 기록
 
 - [ai_guide_standalone.html](/assets/docs/ai_guide_standalone.html)
 
+
+<!-- 1. 파일 수집용 (스크립트가 파일을 옮기도록 유도, 화면에는 안 보이게 처리) --> 
+<div style="display:none">[ai_guide_standalone.html](/assets/docs/ai_guide_standalone.html)</div> 
+
+<!-- 2. 실제 사용자 클릭용 (확장자를 살려서 웹브라우저 실행) --> 
+<a href="/assets/docs/ai_guide_standalone.html" target="_blank">AI 가이드 바로보기</a>
  
 
 ---
