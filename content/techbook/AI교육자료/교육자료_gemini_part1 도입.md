@@ -3,7 +3,8 @@ created: 2026-01-26
 publish: true
 tags: []
 title: 교육자료_gemini_part1 도입
-type: []
+type:
+- techbook
 ---
 
 with #gemini 

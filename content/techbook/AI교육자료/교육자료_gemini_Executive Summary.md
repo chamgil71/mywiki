@@ -3,7 +3,8 @@ created: 2026-01-23
 publish: true
 tags: []
 title: 교육자료_gemini_Executive Summary
-type: []
+type:
+- techbook
 ---
 
 with #gemini 
