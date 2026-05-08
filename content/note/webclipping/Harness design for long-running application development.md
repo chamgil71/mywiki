@@ -106,7 +106,7 @@ title: Harness design for long-running application development
 
 클릭을 거듭할수록 문제점들이 드러나기 시작했습니다. 레이아웃이 공간 낭비가 심했는데, 고정 높이 패널 때문에 뷰포트 대부분이 비어 있었습니다. 작업 흐름도 경직되어 있었습니다. 레벨을 구성하려고 하면 스프라이트와 엔티티를 먼저 생성하라는 메시지가 나타났지만, UI 어디에도 그 순서를 안내하는 요소가 없었습니다. 더 심각한 것은 게임 자체가 제대로 작동하지 않는다는 것이었습니다. 엔티티는 화면에 나타났지만 입력에 아무런 반응도 보이지 않았습니다. 코드를 살펴보니 엔티티 정의와 게임 런타임 간의 연결이 끊어져 있었는데, 어디가 문제인지 UI에서 확인할 방법이 없었습니다.
 
-![](/assets/images/79653bac3243630821d0e1313ada9b1c_MD5.webp)
+![[../../90-Assets/Harness design for long-running application development 1/79653bac3243630821d0e1313ada9b1c_MD5.webp]]
 
 솔로 하네스로 생성된 앱을 열었을 때의 초기 화면입니다.
 
@@ -120,7 +120,7 @@ title: Harness design for long-running application development
 
 제가 기획자에게 AI 기능을 사양에 포함시켜 달라고 요청했기 때문에, 앱에는 클로드(Claude) 통합 기능이 내장되어 있어 프롬프트를 통해 게임의 다양한 부분을 생성할 수 있었습니다. 덕분에 작업 속도가 크게 향상되었습니다.
 
-![](/assets/images/cee97302151b40baf38902ab50b6a68e_MD5.webp)
+![[../../90-Assets/Harness design for long-running application development 1/cee97302151b40baf38902ab50b6a68e_MD5.webp]]
 
 초기 화면: 모든 기능을 갖춘 앱에서 새 게임을 생성하는 화면
 
