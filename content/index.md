@@ -1,7 +1,7 @@
 ---
 banner: /static/mywiki_banner.png
-bannerTitle: MS 위키에 오신 것을 환영합니다!
-created: '2026-02-09'
+bannerTitle: MS Wiki
+created: 2026-02-09
 description: AI · Technology Research
 name: index
 publish: true
@@ -13,7 +13,7 @@ type:
 
 ![](/assets/images/mywiki_banner.png)
 
-# 👋 안녕하세요! 지식 창고입니다. (test-main)
+# 👋 안녕하세요! 이것 저것 창고입니다. 
 
 
 <div align="center">
@@ -28,6 +28,7 @@ Personal Knowledge System
 
 > [!notice]
 > 개인 노트, 동향 분석, 기술 기록을 정리하는 Knowledge Base입니다.
+> 
 > 여기 작성된 자료는 대부분 'AI 프롬프트'를 통해 만들어진 내용입니다. 
 
 ---
@@ -63,9 +64,10 @@ IT 기술 학습 자료 기록
 - 뉴스클리핑 : https://chamgil71.github.io/dailynews
 - 지금 사이트(vercel) : https://mywiki-khaki.vercel.app
 - 뉴스클리핑(vercel) : https://ms-dailynews.vercel.app
-- 버젯N(vercel) : https://budget-n.vercel.app/
-- 기업풀분석(vercel) : https://companypool.vercel.app  
-- 과제정보(vercel) : https://pjtoverview.vercel.app
+- 버젯N(vercel) : https://budget-n.vercel.app/ 
+- 기업풀분석(vercel) : https://companypool.vercel.app (비공개) 
+- 과제정보(vercel) : https://pjtoverview.vercel.app (비공개)
+- 나의 GITHUB : https://github.com/chamgil71
 
 ---
 ## 🆕 자료 목록
@@ -74,15 +76,8 @@ IT 기술 학습 자료 기록
 
 - [26년 04월 02일 발표 자료](/assets/docs/260313_NIPAAI%EC%82%AC%EC%97%85%EC%A7%80%EC%9B%90%EB%B0%A9%ED%96%A5%28%EB%B0%9C%ED%91%9C%29.pdf)
 
-- [ai_guide_standalone.html](/assets/docs/ai_guide_standalone.html)
+- [ai_guide_standalone.html](/assets/docs/ai_guide_standalone.html)  (다운로드시 html 확장자를 붙일것)
 
-
-<!-- 1. 파일 수집용 (스크립트가 파일을 옮기도록 유도, 화면에는 안 보이게 처리) --> 
-<div style="display:none">[ai_guide_standalone.html](/assets/docs/ai_guide_standalone.html)</div> 
-
-<!-- 2. 실제 사용자 클릭용 (확장자를 살려서 웹브라우저 실행) --> 
-<a href="/assets/docs/ai_guide_standalone.html" target="_blank">AI 가이드 바로보기</a>
- 
 
 ---
 ### 🚀 Tags Access
