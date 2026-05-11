@@ -2,13 +2,16 @@ import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import TagCloud from "./quartz/components/TagCloud"
 import Giscus from "./quartz/components/Giscus"
+import Kofi from "./quartz/components/Kofi"
+
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
-    Giscus(), // 👈 컴포넌트를 여기에 주입합니다.
+    Giscus(), // 👈 댓글 컴포넌트 giscus.tsx.
+    Kofi(),
   ],
   footer: Component.Footer({
     links: {
@@ -17,7 +20,8 @@ export const sharedPageComponents: SharedLayout = {
       // 2. 필요 없다면 디스코드 대신 다른 유용한 링크를 넣거나 삭제하세요.
       "Built with Quartz": "https://quartz.jzhao.xyz/",        // 핵심 엔진
       "Content written in Obsidian": "https://obsidian.md",
-      "Hosted on GitHub Pages": "https://pages.github.com/",   // 호스팅
+      "Hosted on Vercel": "https://vercel.com/",
+      // "Hosted on GitHub Pages": "https://pages.github.com/",   // 호스팅
       // "Original by jackyzha0": "https://github.com/jackyzha0/quartz", // 원작자 리스펙트
     },
     // 3. (선택사항) 푸터 텍스트 커스터마이징 
