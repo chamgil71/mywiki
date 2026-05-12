@@ -2,7 +2,7 @@ import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import TagCloud from "./quartz/components/TagCloud"
 import Giscus from "./quartz/components/Giscus"
-import Kofi from "./quartz/components/Kofi"
+// import Kofi from "./quartz/components/Kofi"
 
 
 // components shared across all pages
@@ -11,7 +11,6 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   afterBody: [
     Giscus(), // 👈 댓글 컴포넌트 giscus.tsx.
-    Kofi(),
   ],
   footer: Component.Footer({
     links: {
