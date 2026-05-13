@@ -2,10 +2,11 @@
 
 // 1. 본문 텍스트 크기 상향 (문서 본문 article 영역만 한정)
 article {
-  font-size: 1.1rem !important; 
+  font-size: 1.1rem !important;
   line-height: 1.9 !important;
 
-  p, li {
+  p,
+  li {
     font-size: 1.1rem !important;
     margin-bottom: 1.5em;
   }
@@ -23,7 +24,14 @@ article {
     overflow-y: auto !important;
     margin-bottom: 2rem;
 
-    .folder-title, .file-title {
+    a,
+    button {
+      font-size: 0.9rem !important;
+      line-height: 1.4 !important;
+    }
+
+    .folder-title,
+    .file-title {
       font-size: 0.9rem !important; // 탐색기 글자는 본문보다 작게 유지
     }
   }
@@ -33,17 +41,20 @@ article {
     flex: 0 0 auto !important;
     max-height: 250px !important;
     overflow-y: auto !important;
+
     border-top: 1px solid var(--lightgray);
     padding-top: 0.5rem;
 
-    .recent-note-title {
-      font-size: 0.8rem !important;
+    a {
+      font-size: 0.82rem !important;
+      line-height: 1.4 !important;
     }
   }
 }
 
 // 3. 오른쪽 사이드바 정돈 (목차 및 태그 클라우드)
 .right.sidebar {
+
   // 목차(TOC) 글자 크기 축소 및 스크롤바 생성
   .toc {
     max-height: 350px !important;
@@ -51,13 +62,20 @@ article {
     font-size: 0.9rem !important; // 목차 글자
     margin-bottom: 2rem;
 
-    li, a {
+    li,
+    a {
       font-size: 0.85rem !important;
       line-height: 1.4 !important;
     }
 
-    &::-webkit-scrollbar { width: 4px; }
-    &::-webkit-scrollbar-thumb { background: var(--lightgray); border-radius: 4px; }
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--lightgray);
+      border-radius: 4px;
+    }
   }
 
   // 태그 클라우드 (Tag Cloud): 다시 가로 배치 구름 형태로 복구
@@ -75,9 +93,11 @@ article {
       display: inline-block !important;
       margin: 0 !important;
       padding: 0 !important;
-      
+
       // 불렛 점(•) 강제 제거
-      &:before { content: none !important; }
+      &:before {
+        content: none !important;
+      }
     }
 
     a {
@@ -98,7 +118,8 @@ article {
 }
 
 // 4. 전역 리스트 스타일 간섭 방지
-.sidebar ul, .sidebar li {
+.sidebar ul,
+.sidebar li {
   list-style: none !important;
   text-indent: 0 !important;
 }
