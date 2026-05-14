@@ -3,12 +3,17 @@
 // 1. 본문 텍스트 크기 상향 (문서 본문 article 영역만 한정)
 article {
   font-size: 1.1rem !important;
-  line-height: 1.9 !important;
+  line-height: 2.0 !important;
 
   p,
   li {
     font-size: 1.1rem !important;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5em !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 2.5rem !important;
+    margin-bottom: 1.2rem !important;
   }
 }
 
@@ -45,9 +50,14 @@ article {
     border-top: 1px solid var(--lightgray);
     padding-top: 0.5rem;
 
+    .meta {
+      font-size: 0.8rem; /* 제목보다 약간 더 작게 조절 (원하는 수치로 변경) */
+      color: var(--gray); /* 시각적 계층을 위해 색상을 살짝 흐리게 주면 좋습니다 */
+    }
+
     a {
-      font-size: 0.82rem !important;
-      line-height: 1.4 !important;
+      font-size: 0.9rem !important;
+      line-height: 1.0 !important;
     }
   }
 }
