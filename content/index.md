@@ -68,6 +68,7 @@ IT 기술 학습 자료 기록
 - 기업풀분석(vercel) : https://companypool.vercel.app (비공개) 
 - 과제정보(vercel) : https://pjtoverview.vercel.app (비공개)
 - 나의 GITHUB : https://github.com/chamgil71
+- AI 생성툴 소개(netlify) : https://aitoolguide-ms.netlify.app/
 
 ---
 ## 🆕 자료 목록
