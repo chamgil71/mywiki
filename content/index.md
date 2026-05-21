@@ -60,14 +60,16 @@ IT 기술 학습 자료 기록
 
 내 링크들 
 
+- 나의 GITHUB : https://github.com/chamgil71
 - 지금 사이트 : https://chamgil71.github.io/mywiki
 - 뉴스클리핑 : https://chamgil71.github.io/dailynews
+
 - 지금 사이트(vercel) : https://mywiki-khaki.vercel.app
 - 뉴스클리핑(vercel) : https://ms-dailynews.vercel.app
 - 버젯N(vercel) : https://budget-n.vercel.app/ 
 - 기업풀분석(vercel) : https://companypool.vercel.app (비공개) 
 - 과제정보(vercel) : https://pjtoverview.vercel.app (비공개)
-- 나의 GITHUB : https://github.com/chamgil71
+
 - AI 생성툴 소개(netlify) : https://aitoolguide-ms.netlify.app/
 
 ---
@@ -77,7 +79,7 @@ IT 기술 학습 자료 기록
 
 - [26년 04월 02일 발표 자료](/assets/docs/260313_NIPAAI%EC%82%AC%EC%97%85%EC%A7%80%EC%9B%90%EB%B0%A9%ED%96%A5%28%EB%B0%9C%ED%91%9C%29.pdf)
 
-- [ai_guide_standalone.html](/assets/docs/ai_guide_standalone.html)  (다운로드시 html 확장자를 붙일것)
+- [ai_guide_standalone.html](/assets/docs/ai_guide_standalone.html)  (v26.05.01. , 다운로드시 html 확장자를 붙일것)
 
 
 ---
