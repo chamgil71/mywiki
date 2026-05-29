@@ -207,6 +207,33 @@ GitHub: https://github.com/jackyzha0/quartz
   예: yourusername.github.io/quartz/
 ```
 
+> [!tip]
+> **💡 고급 팁: Quartz 4에 전체 본문 복사 버튼(Copy Markdown) 추가하기**  
+> Quartz 4는 빌드 시 완전히 정적인 HTML을 생성하고 브라우저에서 dynamic hydration(수화)이 일어나지 않으므로, 일반 리액트 컴포넌트처럼 `onClick` 이벤트를 등록하면 동작하지 않습니다. 아래와 같이 **Transformer 플러그인**과 **클라이언트 인라인 스크립트**를 분리하여 독립적으로 구현해야 합니다.
+> 
+> 1. **플러그인 생성 (`quartz/plugins/transformers/rawMarkdown.ts`):**
+>    Remark/Rehype 파이프라인에서 파일의 원래 본문(`file.value`)을 읽어와 `file.data.rawMarkdown` 필드에 보존합니다.
+>    ```ts
+>    export const RawMarkdown: QuartzTransformerPlugin = () => ({
+>      name: "RawMarkdown",
+>      markdownPlugins() {
+>        return [() => (_, file) => {
+>          file.data.rawMarkdown = file.value ? file.value.toString() : ""
+>        }]
+>      }
+>    })
+>    ```
+> 2. **복사 버튼 컴포넌트 (`quartz/components/CopyMarkdown.tsx`):**
+>    서버사이드에서 렌더링될 정적 버튼 구조를 작성합니다. HTML 파싱 간섭 및 XSS를 막기 위해 원문을 `encodeURIComponent`로 인코딩하여 `data-markdown` 속성에 심어둡니다.
+>    ```tsx
+>    CopyMarkdown.afterDOMLoaded = copyMarkdownScript // 클라이언트 동작 바인딩
+>    CopyMarkdown.css = styles // 버튼 위치 스타일시트 바인딩
+>    ```
+> 3. **클라이언트 스크립트 (`quartz/components/scripts/copyMarkdown.inline.ts`):**
+>    브라우저에서 `nav` 이벤트를 감지하여 클릭 리스너를 붙이고, `window.addCleanup()`으로 SPA 전환 시 중복 리스너를 방지합니다. 클릭 시 `decodeURIComponent`로 복구하여 클립보드에 복사합니다.
+> 4. **설정 등록:**
+>    `quartz.config.ts`의 `transformers` 배열에 `Plugin.RawMarkdown()`을 넣고, `quartz.layout.ts`에서 원하는 레이아웃(예: `beforeBody`)에 `Component.CopyMarkdown()`을 추가합니다.
+
 **대안 B: Obsidian Digital Garden 플러그인 (무료)**
 ```
 커뮤니티 플러그인: "Digital Garden"

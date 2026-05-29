@@ -1,0 +1,59 @@
+.page-header {
+  position: relative;
+}
+
+.copy-md-button {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  z-index: 10;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  color: var(--darkgray);
+  background-color: var(--light);
+  border: 1px solid var(--lightgray);
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.copy-md-button:hover {
+  background-color: var(--lightgray);
+  transform: translateY(-1px);
+}
+
+.copy-md-button:active {
+  transform: scale(0.96);
+}
+
+.copy-md-button.copied {
+  color: #16a34a;
+  border-color: #16a34a;
+  background-color: color-mix(in srgb, #16a34a 8%, var(--light));
+}
+
+@media (max-width: 800px) {
+  .copy-md-button {
+    top: 0.4rem;
+    right: 0.4rem;
+    width: 30px;
+    height: 30px;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
