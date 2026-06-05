@@ -12,11 +12,6 @@ type:
 - prompt
 ---
 
-## 프롬프트 모음 index
+## 프롬프트 모음
 
-```dataview
-list 
-FROM "msshin/60-AI/프롬프트"
-WHERE file.name != "_index"
-SORT file.folder ASC
-```
+AI 프롬프트 스킬 및 템플릿 모음입니다.
