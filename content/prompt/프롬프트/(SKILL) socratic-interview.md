@@ -22,7 +22,7 @@ description: '소크라테스식 인터뷰 모드. 질문 물결 구조로 상�
 name: socratic-interview
 publish: true
 tags: []
-title: (skill) SkillA_AI 전략보고서 생성스킬
+title: (SKILL) 소크라테스식 인터뷰 스킬
 type:
 - prompt
 ---
