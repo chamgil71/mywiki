@@ -29,6 +29,8 @@ jobs:
         run: npm ci
       - name: Build Quartz
         run: npm run build
+      - name: Copy root static files
+        run: cp ads.txt public/ads.txt
       - uses: actions/upload-pages-artifact@v4
         with:
           path: public

@@ -20,6 +20,7 @@ export const sharedPageComponents: SharedLayout = {
       "Built with Quartz": "https://quartz.jzhao.xyz/",        // 핵심 엔진
       "Content written in Obsidian": "https://obsidian.md",
       "Hosted on Vercel": "https://vercel.com/",
+      "개인정보처리방침": "/privacy",
       // "Hosted on GitHub Pages": "https://pages.github.com/",   // 호스팅
       // "Original by jackyzha0": "https://github.com/jackyzha0/quartz", // 원작자 리스펙트
     },

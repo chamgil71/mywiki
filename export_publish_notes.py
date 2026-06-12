@@ -145,6 +145,16 @@ def export_all():
                 dst_file.write_text(content, encoding="utf-8")
                 print(f"📄 {src_file.name} -> {dst_file.relative_to(CONTENT_PATH)}")
 
+    # static_pages/ 폴더가 있으면 content/에 덮어씌움
+    static_pages = Path(__file__).parent / "static_pages"
+    if static_pages.exists():
+        for src in static_pages.rglob("*"):
+            if src.is_file():
+                dst = CONTENT_PATH / src.relative_to(static_pages)
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(src, dst)
+                print(f"📌 static: {src.name}")
+
 if __name__ == "__main__":
     export_all()
     print(f"✨ 완료: {datetime.now().strftime('%H:%M:%S')}")
