@@ -31,7 +31,7 @@ jobs:
         run: npm run build
       - name: Copy root static files
         run: cp ads.txt public/ads.txt
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
@@ -42,5 +42,5 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v5
         id: deployment
