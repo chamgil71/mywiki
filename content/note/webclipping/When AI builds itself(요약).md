@@ -1,10 +1,10 @@
 ---
 author: claude
-created: 2026-06-10
+created: 2026-06-17
 description: nthropic은 현재 AI 개발의 점점 더 많은 부분을 AI 시스템 자체에 위임하고 있으며, 이것이 작업 속도를 높이고 있다.
   이 흐름이 충분히 진행되고 충분한 컴퓨팅 파워가 주어진다면, 결국 **완전히 자율적으로 자신의 후속 버전을 설계·개발하는 AI**, 즉 **재귀적
   자기개선(Recursive Self-Improvement)** 이 가능해진다는 것이 이 글의 핵심 전제
-modified: 2026-06-11
+modified: 2026-06-17
 publish: true
 source: https://www.anthropic.com/institute/recursive-self-improvement?utm_source=Viewsletter&utm_campaign=dde20ef6be-EMAIL_CAMPAIGN_2026_03_17_11_46_COPY_01&utm_medium=email&utm_term=0_-0c2669b0bf-467126484
 tags:
