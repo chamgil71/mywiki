@@ -30,21 +30,39 @@ const defaultOptions: Options = {
     return node
   },
   sortFn: (a, b) => {
-    // Sort order: folders first, then files. Sort folders and files alphabeticall
-    if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-      // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
-      // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
+    // 1. Folders first
+    if (a.isFolder && !b.isFolder) {
+      return -1
+    }
+    if (!a.isFolder && b.isFolder) {
+      return 1
+    }
+
+    // 2. Both are folders: sort alphabetically
+    if (a.isFolder && b.isFolder) {
       return a.displayName.localeCompare(b.displayName, undefined, {
         numeric: true,
         sensitivity: "base",
       })
     }
 
-    if (!a.isFolder && b.isFolder) {
-      return 1
-    } else {
+    // 3. Both are files: sort by date (descending, latest first)
+    const dateA = a.data?.date ? new Date(a.data.date) : undefined
+    const dateB = b.data?.date ? new Date(b.data.date) : undefined
+
+    if (dateA && dateB) {
+      return dateB.getTime() - dateA.getTime()
+    } else if (dateA) {
       return -1
+    } else if (dateB) {
+      return 1
     }
+
+    // Fallback to alphabetical if dates are missing or equal
+    return a.displayName.localeCompare(b.displayName, undefined, {
+      numeric: true,
+      sensitivity: "base",
+    })
   },
   filterFn: (node) => node.slugSegment !== "tags",
   order: ["filter", "map", "sort"],

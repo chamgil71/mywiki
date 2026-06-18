@@ -87,13 +87,19 @@ const config: QuartzConfig = {
       Plugin.ContentPage(),
       Plugin.FolderPage({
         sort: (a: any, b: any) => {
-          const aIsFolder = a.children !== undefined
-          const bIsFolder = b.children !== undefined
+          const isFolder = (slug: string) => {
+            return slug.endsWith("/") || slug.endsWith("index") || slug.endsWith("index.md") || slug.endsWith("index.html")
+          }
+          const aIsFolder = isFolder(a.slug ?? "")
+          const bIsFolder = isFolder(b.slug ?? "")
           if (aIsFolder && !bIsFolder) return -1
           if (!aIsFolder && bIsFolder) return 1
-          const aName = a.displayName ?? a.slug ?? ""
-          const bName = b.displayName ?? b.slug ?? ""
-          return aName.localeCompare(bName, "ko") * -1
+          const aName = a.frontmatter?.title ?? a.slug ?? ""
+          const bName = b.frontmatter?.title ?? b.slug ?? ""
+          return aName.localeCompare(bName, "ko", {
+            numeric: true,
+            sensitivity: "base",
+          })
         }
       }),
       Plugin.TagPage(),

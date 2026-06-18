@@ -88,8 +88,10 @@ mywiki/
 │
 ├── public/                     # 빌드 결과물 (git 추적 안 함)
 │
-├── docs/                       # 프로젝트 설계 문서
-│   └── 통합-서비스-구성-계획.md  # dailynews·creative-spark 통합 계획
+├── docs/                       # 프로젝트 설계 및 진단 문서
+│   ├── references/             # Quartz 원본 가이드 및 레퍼런스 문서 (격리 수용)
+│   ├── 통합-서비스-구성-계획.md  # dailynews·creative-spark 통합 계획
+│   └── 프로젝트-구조-및-개선점-점검.md # 프로젝트 취약성 및 효율성 진단 보고서
 │
 ├── .github/
 │   └── workflows/
@@ -354,7 +356,7 @@ python index_md.py
 | 이미지가 깨짐 | `export_publish_notes.py` 미실행 | 스크립트 재실행 후 빌드 |
 | 로컬 빌드는 되는데 Actions 실패 | `fetch-depth: 0` 누락 (git 날짜 메타 필요) | `deploy.yaml` 체크 |
 | Vercel URL 리소스 404 | `baseUrl` 환경 분기 미작동 | `quartz.config.ts` `process.env.VERCEL` 확인 |
-| 한글 파일명 정렬이 이상함 | FolderPage locale 미설정 | `quartz.config.ts` FolderPage 정렬 함수 확인 |
+| 한글 파일명 및 탐색기 정렬 오동작 | FolderPage 데이터 구조 미스매치 및 빌드 시 날짜(`date`) 속성 유실 | `quartz.config.ts` 의 sort 함수와 `contentIndex.tsx` 설정 수정 |
 
 ---
 
@@ -368,3 +370,17 @@ python index_md.py
 | Vercel 배포 설정 | https://vercel.com/docs/project-configuration |
 | IBM Plex Sans KR | https://fonts.google.com/specimen/IBM+Plex+Sans+KR |
 | 통합 서비스 구성 계획 | `docs/통합-서비스-구성-계획.md` |
+| 프로젝트 구조 및 개선점 점검 | `docs/프로젝트-구조-및-개선점-점검.md` |
+
+---
+
+## 📝 최근 작업 이력 (Changelog)
+
+### **2026-06-18 — 한글 정렬 및 탐색기 날짜순 정렬 버그 수정**
+- **왼편 탐색기(Explorer) 정렬 방식 개선**: 
+  - `contentIndex.tsx`에서 빌드 시 `date` 속성을 강제 삭제하던 로직을 수정하여 JSON 데이터에 날짜를 유지하도록 보존하였습니다.
+  - `Explorer.tsx` 내 클라이언트 사이드 정렬 로직을 고쳐, 폴더는 알파벳/가나다 순으로 맨 앞에 두고, 파일끼리는 최신 날짜 순(생성일/수정일 기준 내림차순)으로 정렬되도록 수정했습니다.
+- **가운데 목록(FolderContent) 정렬 정상화**:
+  - `quartz.config.ts`의 `FolderPage` 커스텀 `sort` 함수가 실제 데이터 타입인 `QuartzPluginData` 구조와 불일치하던 오류(폴더 판단을 `children` 속성으로 하던 오류 및 제목을 `displayName`으로 찾던 오류)를 수정했습니다.
+  - 정렬 순서를 역순(`* -1`)에서 한글 가나다(오름차순) 순 정렬로 정상화하였습니다.
+
