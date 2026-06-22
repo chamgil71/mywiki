@@ -17,47 +17,49 @@ article {
   }
 }
 
-// 2. 왼쪽 사이드바 레이아웃 정돈
-.left.sidebar {
-  display: flex !important;
-  flex-direction: column !important;
+// 2. 왼쪽 사이드바 레이아웃 정돈 (모바일 제외: 800px 이상에서만 적용)
+@media all and (min-width: 800px) {
+  .left.sidebar {
+    display: flex !important;
+    flex-direction: column !important;
 
-  // 탐색기 (Explorer): 공간을 많이 차지하도록
-  .explorer {
-    flex: 1 1 auto !important;
-    max-height: 60vh !important;
-    overflow-y: auto !important;
-    margin-bottom: 2rem;
+    // 탐색기 (Explorer): 공간을 많이 차지하도록
+    .explorer {
+      flex: 1 1 auto !important;
+      max-height: 60vh !important;
+      overflow-y: auto !important;
+      margin-bottom: 2rem;
 
-    a,
-    button {
-      font-size: 0.9rem !important;
-      line-height: 1.4 !important;
+      a,
+      button {
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+      }
+
+      .folder-title,
+      .file-title {
+        font-size: 0.9rem !important; // 탐색기 글자는 본문보다 작게 유지
+      }
     }
 
-    .folder-title,
-    .file-title {
-      font-size: 0.9rem !important; // 탐색기 글자는 본문보다 작게 유지
-    }
-  }
+    // 최근 게시물 (Recent Notes): 아래쪽에 작게 고정
+    .recent-notes {
+      flex: 0 0 auto !important;
+      max-height: 250px !important;
+      overflow-y: auto !important;
 
-  // 최근 게시물 (Recent Notes): 아래쪽에 작게 고정
-  .recent-notes {
-    flex: 0 0 auto !important;
-    max-height: 250px !important;
-    overflow-y: auto !important;
+      border-top: 1px solid var(--lightgray);
+      padding-top: 0.5rem;
 
-    border-top: 1px solid var(--lightgray);
-    padding-top: 0.5rem;
+      .meta {
+        font-size: 0.8rem; /* 제목보다 약간 더 작게 조절 (원하는 수치로 변경) */
+        color: var(--gray); /* 시각적 계층을 위해 색상을 살짝 흐리게 주면 좋습니다 */
+      }
 
-    .meta {
-      font-size: 0.8rem; /* 제목보다 약간 더 작게 조절 (원하는 수치로 변경) */
-      color: var(--gray); /* 시각적 계층을 위해 색상을 살짝 흐리게 주면 좋습니다 */
-    }
-
-    a {
-      font-size: 0.9rem !important;
-      line-height: 1.0 !important;
+      a {
+        font-size: 0.9rem !important;
+        line-height: 1.0 !important;
+      }
     }
   }
 }
