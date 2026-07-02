@@ -8,7 +8,7 @@ Obsidian 노트 → Quartz v4 빌드 → Vercel / GitHub Pages 이중 배포 개
 
 ## Facts (무엇을 만드는가)
 
-- 사양·배포 구조의 1차 출처는 [`README.md`](./README.md), [`docs/`](./docs/)입니다. `prototype` 프로필상 별도 `spec.md`/`worklog.md`는 의무화하지 않으며, 주요 변경은 README에 가볍게 기재합니다.
+- 사양·설계의 1차 앵커는 [`docs/spec.md`](./docs/spec.md)(경량)입니다. 보조 컨텍스트는 [`README.md`](./README.md)·[`docs/`](./docs/)를 참조합니다. `prototype` 프로필상 `worklog.md`는 의무화하지 않으며, 주요 변경은 README에 가볍게 기재합니다.
 
 ## Project Shape
 
