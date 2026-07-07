@@ -6,7 +6,7 @@ source: claude
 tags:
 - AI
 - AI이슈
-title: 월간AI이슈분석(202606)
+title: ai_issue_월간_202606
 type:
 - report
 ---
