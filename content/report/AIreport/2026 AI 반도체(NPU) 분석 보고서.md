@@ -4,6 +4,7 @@ modified: 2026-04-06
 name: AI npu
 publish: true
 source: 본문출처, claude
+status: Editing
 tags:
 - AI
 - infra

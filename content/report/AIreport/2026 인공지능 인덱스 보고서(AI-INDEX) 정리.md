@@ -13,7 +13,7 @@ type:
 
 ```toc  
 minLevel: 2
-maxLevel: 3
+maxLevel: 2
 ```
 
 ---
@@ -75,6 +75,46 @@ maxLevel: 3
 | **개발도상국**      | 8장             | 장점: 새로운 AI 정책 및 거버넌스 지형에 적극적으로 진입하고 있음.<br><br>단점: 컴퓨팅 인프라 투자 불균형으로 인해 글로벌 기술 격차 위험에 노출됨.                                                                                              | 2025년 신규 채택된 국가 AI 전략의 절반 이상이 개발도상국에서 발표됨.           |
 
 ---
+## [생태계경쟁력 ] AI 생태계 국가 경쟁력 비교 
+
+> **기준:** Stanford HAI AI Index 2026의 Global AI Vibrancy 평가항목을 기반으로 종합 정리
+
+|분야 (AI Index 기준)|🇺🇸 미국|🇨🇳 중국|🇰🇷 한국|🇯🇵 일본|🇮🇳 인도|
+|---|---|---|---|---|---|
+|**① Research (연구·논문)**|세계 최고 연구기관, 논문 영향력, Frontier AI 연구 선도|논문 수 세계 최고 수준, 응용연구 강세|AI 응용 및 반도체 연구 강점|산업 AI·로봇 연구 강점|논문 증가율 최고 수준, AI 인재 기반 확대|
+|**② Frontier AI / Foundation Model**|GPT, Claude, Gemini, Llama 등 최고 수준의 Foundation Model|DeepSeek, Qwen, GLM, Seed 등 빠른 성장|자체 글로벌 Foundation Model 부재|일본어 특화 LLM(tsuzumi), Sakana AI|Indic LLM 중심, 글로벌 경쟁력은 아직 제한적|
+|**③ Talent (AI 인재)**|세계 최고 연구자와 글로벌 인재 집중|AI 인력 규모 세계 2위|우수한 공학 인력, 규모는 제한적|제조·로봇 중심 전문인력|세계 최대 AI 개발자 및 AI 엔지니어 증가율|
+|**④ Education (교육)**|세계 최고 대학(MIT, Stanford 등)과 AI 교육 생태계|정부 주도의 AI 교육 확대|높은 STEM 교육 수준|공학 중심 교육 강세|AI 교육 확대와 대규모 인재 양성|
+|**⑤ Economy (투자·스타트업)**|VC 투자, AI 유니콘, 글로벌 플랫폼 압도적|정부 투자와 AI 유니콘 급성장|대기업 중심 투자 구조|제조기업 중심 AI 투자|AI 스타트업 증가율 세계 최고 수준|
+|**⑥ Infrastructure (AI 인프라)**|NVIDIA GPU, 초대형 데이터센터, 클라우드(AWS·Azure·Google Cloud)|대규모 데이터센터, AI 클라우드, 국산 AI칩 개발|HBM 메모리 세계 최고, 클라우드 규모는 제한적|산업용 인프라와 제조 기반 강점|GPU·AI 데이터센터는 아직 부족|
+|**⑦ Hardware / Semiconductor**|NVIDIA, AMD, Broadcom 등 AI 칩 생태계|Huawei, Cambricon 등 국산 AI칩 육성|HBM 메모리 세계 최고(SK하이닉스·삼성전자)|반도체 장비 및 소재 경쟁력|AI 반도체 산업은 초기 단계|
+|**⑧ Physical AI / Robotics**|로봇 플랫폼, 자율주행, Robot Foundation Model|휴머노이드, 드론, 제조 로봇, 대량생산|스마트팩토리, 협동로봇, 자동차 AI|산업용 로봇, 감속기, 서보모터 세계 최고|아직 초기 단계|
+|**⑨ Policy & Governance (정책)**|민간 중심 + 정부 지원 확대|국가 전략산업으로 강력한 지원|AI 국가전략과 디지털 정책|Society 5.0, 제조 AI 중심|IndiaAI Mission 중심 대규모 투자|
+|**⑩ Responsible AI / Regulation**|AI 안전성과 규제 체계 선도|국가 중심 관리 체계|AI 윤리 정책 강화|신뢰성 중심 AI 활용|AI 활용 확대 중심|
+|**⑪ Commercialization (상용화)**|글로벌 SaaS·클라우드·생성형 AI 서비스|초고속 상용화와 대규모 내수시장|제조업 중심 AI 적용|제조·자동차 분야 상용화|IT 서비스 및 디지털 공공서비스 중심|
+|**⑫ Global Ecosystem (생태계)**|세계 AI 생태계 중심, 글로벌 표준 주도|중국 내 독자 생태계 구축|반도체·제조 중심|산업 중심 생태계|인재·서비스 중심 생태계|
+
+---
+
+### 국가별 핵심 경쟁력
+
+| 국가          | 핵심 강점                                                     |
+| ----------- | --------------------------------------------------------- |
+| 🇺🇸 **미국** | AI Foundation Model, AI 반도체, 클라우드, AI 플랫폼, AI 연구, 글로벌 생태계 |
+| 🇨🇳 **중국** | 생성형 AI, 휴머노이드, 제조 AI, 드론, AI 상용화, 정부 투자                   |
+| 🇰🇷 **한국** | HBM 메모리, 스마트 제조, 자동차 AI, 반도체                              |
+| 🇯🇵 **일본** | 산업용 로봇, 제조 AI, 정밀기계, 핵심 로봇 부품                             |
+| 🇮🇳 **인도** | AI 인재, AI 서비스, 다국어 AI, AI 스타트업, 디지털 공공 인프라                |
+
+### 국가별 주요 AI 산업 및 대표 기업
+
+| 국가      | 주요 AI 산업                                       | 대표 기업                                                                                         |
+| ------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 🇺🇸 미국 | Foundation AI, AI 반도체, 클라우드, Physical AI, 자율주행 | NVIDIA, OpenAI, Google, Microsoft, Meta, Amazon, Tesla, Anthropic, AMD                        |
+| 🇨🇳 중국 | Foundation AI, 휴머노이드, 제조 AI, 드론, AI 클라우드       | DeepSeek, Alibaba, ByteDance, Z.ai, Huawei, DJI, Unitree, UBTech, Baidu, Tencent              |
+| 🇰🇷 한국 | HBM, 스마트팩토리, 자동차 AI, 협동로봇                      | 삼성전자, SK하이닉스, 현대자동차, LG AI Research, 네이버, 두산로보틱스, Rainbow Robotics                            |
+| 🇯🇵 일본 | 산업용 로봇, 제조 AI, Physical AI, 반도체 장비             | FANUC, Yaskawa, Kawasaki, Toyota, Sony, NTT, SoftBank, Preferred Networks, Sakana AI, Rapidus |
+| 🇮🇳 인도 | AI 서비스, 다국어 LLM, AI SaaS, 핀테크 AI, 디지털 공공 인프라   | TCS, Infosys, Wipro, HCLTech, Tech Mahindra, Sarvam AI, Krutrim, Yellow.ai, CoRover           |
 
 ## [주요 비교] 글로벌 국가 간 비교 및 한국의 위치
 
