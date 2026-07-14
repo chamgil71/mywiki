@@ -70,9 +70,11 @@ article {
   // 목차(TOC) 글자 크기 축소 및 스크롤바 생성
   .toc {
     max-height: 350px !important;
+    min-height: 9rem !important; // 최소 5줄 이상 보이도록 고정
+    flex-shrink: 0 !important;   // 다른 요소 때문에 수축 방지
     overflow-y: auto !important;
     font-size: 0.9rem !important; // 목차 글자
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     li,
     a {
@@ -90,15 +92,28 @@ article {
     }
   }
 
-  // 태그 클라우드 (Tag Cloud): 다시 가로 배치 구름 형태로 복구
+  // 태그 클라우드 (Tag Cloud): 높이 제한으로 TOC 공간 확보
   .tag-cloud {
+    max-height: 160px !important; // 태그가 많아도 이 높이까지만 차지
+    overflow-y: auto !important;
+    flex-shrink: 1 !important;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--lightgray);
+      border-radius: 4px;
+    }
+
     ul {
       list-style: none !important;
       padding: 0 !important;
       margin: 0 !important;
       display: flex !important;
       flex-wrap: wrap !important;
-      gap: 8px !important;
+      gap: 6px !important;
     }
 
     li {
@@ -114,8 +129,8 @@ article {
 
     a {
       display: inline-block !important;
-      padding: 4px 10px !important;
-      font-size: 0.8rem !important; // 태그 글자 크기
+      padding: 3px 8px !important;
+      font-size: 0.72rem !important; // 태그 글자 크기 축소
       background: var(--highlight) !important;
       border-radius: 8px !important;
       text-decoration: none !important;
