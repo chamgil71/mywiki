@@ -94,7 +94,7 @@ article {
 
   // 태그 클라우드 (Tag Cloud): 높이 제한으로 TOC 공간 확보
   .tag-cloud {
-    max-height: 160px !important; // 태그가 많아도 이 높이까지만 차지
+    max-height: 250px !important; // 태그가 많아도 이 높이까지만 차지
     overflow-y: auto !important;
     flex-shrink: 1 !important;
 
