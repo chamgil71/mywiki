@@ -150,3 +150,8 @@ article {
   list-style: none !important;
   text-indent: 0 !important;
 }
+
+// 5. 기타 출처 표기 정리
+blockquote p {
+  white-space: break-spaces;
+}
