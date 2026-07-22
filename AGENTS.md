@@ -2,9 +2,9 @@
 
 Obsidian 노트 → Quartz v4 빌드 → Vercel / GitHub Pages 이중 배포 개인 지식 저장소. 이 문서는 이 레포에서 AI 에이전트 작업의 **최상위 진입점(SSOT)**입니다.
 
-- **적용 프로필**: `prototype` — [`agent/profiles/prototype.md`](./agent/profiles/prototype.md)
+- **적용 프로필**: `prototype` — [`profiles/prototype.md`](./.claude/reference/profiles/prototype.md)
   - 콘텐츠·설정 중심의 정적 사이트 생성기이므로 경량 규범을 적용합니다(자동화 테스트 비필수, 외과적 변경 원칙, 백엔드 서버 미도입).
-- **오케스트레이션**: 대규모 다단계 리팩터링이 필요한 경우에 한해 [`agent/orchestration.md`](./agent/orchestration.md)를 참조합니다.
+- **오케스트레이션**: 대규모 다단계 리팩터링이 필요한 경우에 한해 [`orchestration.md`](./.claude/reference/orchestration.md)를 참조합니다.
 
 ## Facts (무엇을 만드는가)
 
