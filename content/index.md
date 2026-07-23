@@ -13,8 +13,7 @@ type:
 
 ![](/assets/images/mywiki_banner.png)
 
-# 👋 안녕하세요! 이것 저것 창고입니다. 
-
+# 👋 안녕하세요, MS Wiki입니다
 
 <div align="center">
 
@@ -24,67 +23,78 @@ AI · Investing · Technology
 Personal Knowledge System
 
 </div>
+
 ---
 
-> [!notice]
-> 개인 노트, 동향 분석, 기술 기록을 정리하는 Knowledge Base입니다.
-> 
-> 여기 작성된 자료는 대부분 'AI 프롬프트'를 통해 만들어진 내용입니다. 
+> [!info] 소개
+> AI · 기술 · 투자를 공부하고 실무에 적용하며 정리하는 개인 지식 저장소입니다. 대부분의 글은 AI 도구의 도움을 받아 초안을 작성한 뒤 직접 검증·편집해서 공개합니다. 운영자 소개와 제작 방식은 <a href="/about">소개 페이지</a>에서 확인할 수 있습니다.
 
 ---
 
 ## 📚 Knowledge Areas
 
-### 🤖 AI 보고서
+### 🤖 AI 산업 보고서
 
-AI 기술, LLM, 반도체, 산업 분석 연습
+AI 반도체, 데이터센터, 정책, 에이전틱 AI 등 업계 동향을 조사·정리한 자료입니다.
 
-➡ [AI보고서](./report/AIreport/index)
-
----
-### 📊 기술도서 정리
-
-IT 기술 학습 자료 기록
-
-➡ [기술도서](./techbook/index)
+➡ <a href="/report/AIreport/index">AI 보고서 보기</a>
 
 ---
-### 🧠 오늘의 뉴스
 
-내 github 뉴스 사이트
+### 📊 기술 가이드북
 
-➡ [Daily News](https://chamgil71.github.io/dailynews/index.html)
+Obsidian 활용법, 바이브코딩(AI 코딩 도구) 실전 가이드, Lovable 앱 빌더 사용법 등 직접 써보고 검증한 내용을 챕터 형식으로 정리했습니다.
 
----
-## 🆕 관련사이트
-
-내 링크들 
-
-- 나의 GITHUB : https://github.com/chamgil71
-- 지금 사이트 : https://chamgil71.github.io/mywiki
-- 뉴스클리핑 : https://chamgil71.github.io/dailynews
-
-- 지금 사이트(vercel) : https://mywiki-khaki.vercel.app
-- 뉴스클리핑(vercel) : https://ms-dailynews.vercel.app
-- 버젯N(vercel) : https://budget-n.vercel.app/ 
-- 기업풀분석(vercel) : https://companypool.vercel.app (비공개) 
-- 과제정보(vercel) : https://pjtoverview.vercel.app (비공개)
-
-- AI 생성툴 소개(netlify) : https://aitoolguide-ms.netlify.app/
+➡ <a href="/techbook/index">기술도서 보기</a>
 
 ---
-## 🆕 자료 목록
 
-- [25년11월7일ESG컨퍼런스발표자료](/assets/docs/251107aihighway_%EB%94%94%EC%A7%80%ED%84%B8ESG.pdf)
+### 🧩 프롬프트 · 스킬 모음
 
-- [26년 04월 02일 발표 자료](/assets/docs/260313_NIPAAI%EC%82%AC%EC%97%85%EC%A7%80%EC%9B%90%EB%B0%A9%ED%96%A5%28%EB%B0%9C%ED%91%9C%29.pdf)
+업무에서 반복 사용하는 AI 프롬프트와 Claude Skill 템플릿을 카테고리별로 정리했습니다.
 
-- [ai_guide_standalone.html](/assets/docs/ai_guide_standalone.html)  (v26.05.01. , 다운로드시 html 확장자를 붙일것)
-
+➡ <a href="/prompt/index">프롬프트 모음 보기</a>
 
 ---
-### 🚀 Tags Access
 
-- [[tags/AI|태그: AI]]
-- [[report/AIreport|AIreport]]
-- [[note|자료정리]]
+### 📎 자료 정리 · 웹클리핑
+
+읽은 글이나 자료를 요약하고 제 생각을 덧붙여 정리한 노트입니다.
+
+➡ <a href="/note/index">자료 정리 보기</a>
+
+---
+
+## 🌐 관련 사이트
+
+| 사이트 | 플랫폼 | 링크 |
+|---|---|---|
+| 지금 이 사이트 | Vercel | https://mywiki-khaki.vercel.app |
+| 지금 이 사이트 | GitHub Pages | https://chamgil71.github.io/mywiki |
+| 뉴스 클리핑 | Vercel | https://ms-dailynews.vercel.app |
+| 뉴스 클리핑 | GitHub Pages | https://chamgil71.github.io/dailynews |
+| 버젯N | Vercel | https://budget-n.vercel.app |
+| AI 생성툴 소개 | Netlify | https://aitoolguide-ms.netlify.app |
+| GitHub 프로필 | — | https://github.com/chamgil71 |
+
+> [!note] 비공개 프로젝트
+> 아래 두 사이트는 접근이 제한된 개인·업무용 프로젝트입니다.
+> - 기업풀분석: https://companypool.vercel.app
+> - 과제정보: https://pjtoverview.vercel.app
+
+---
+
+## 🆕 최근 자료
+
+- [2025년 11월 7일 ESG 컨퍼런스 발표자료](/assets/docs/251107aihighway_%EB%94%94%EC%A7%80%ED%84%B8ESG.pdf)
+- [2026년 4월 2일 발표 자료](/assets/docs/260313_NIPAAI%EC%82%AC%EC%97%85%EC%A7%80%EC%9B%90%EB%B0%A9%ED%96%A5%28%EB%B0%9C%ED%91%9C%29.pdf)
+- [ai_guide_standalone.html](/assets/docs/ai_guide_standalone.html) (v26.05.01, 다운로드 시 `.html` 확장자를 붙여서 저장하세요)
+
+---
+
+## ℹ️ 사이트 정보
+
+- <a href="/about">소개</a>
+- <a href="/privacy">개인정보처리방침</a>
+- [게시판](/memo/정리중/게시판)
+- <a href="/tags/AI">태그: AI</a>
