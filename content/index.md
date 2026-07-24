@@ -6,7 +6,7 @@ description: AI · Technology Research
 name: index
 publish: true
 tags: []
-title: SHIN Knowledge Vault
+title: Chamgil Knowledge Vault
 type:
 - index
 ---
