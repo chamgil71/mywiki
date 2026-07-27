@@ -2,7 +2,7 @@
 created: 2026-03-06
 publish: true
 tags: []
-title: (HWPX)skillC_HWPX 문서 생성·렌더링 스킬(hwpx-renderer) v2
+title: (skill) skillC_HWPX 문서 생성·렌더링 스킬
 type:
 - prompt
 version: '2.0'
