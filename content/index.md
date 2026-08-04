@@ -67,20 +67,23 @@ Obsidian 활용법, 바이브코딩(AI 코딩 도구) 실전 가이드, Lovable 
 
 ## 🌐 관련 사이트
 
-| 사이트 | 플랫폼 | 링크 |
-|---|---|---|
-| 지금 이 사이트 | Vercel | https://mywiki-khaki.vercel.app |
-| 지금 이 사이트 | GitHub Pages | https://chamgil71.github.io/mywiki |
-| 뉴스 클리핑 | Vercel | https://ms-dailynews.vercel.app |
-| 뉴스 클리핑 | GitHub Pages | https://chamgil71.github.io/dailynews |
-| 버젯N | Vercel | https://budget-n.vercel.app |
-| AI 생성툴 소개 | Netlify | https://aitoolguide-ms.netlify.app |
-| GitHub 프로필 | — | https://github.com/chamgil71 |
+| 사이트        | 플랫폼          | 링크                                    | 비고  |
+| ---------- | ------------ | ------------------------------------- | --- |
+| GitHub 프로필 | Github       | https://github.com/chamgil71          |     |
+| 지금 이 사이트   | Vercel       | https://mywiki-khaki.vercel.app       |     |
+| 지금 이 사이트   | GitHub Pages | https://chamgil71.github.io/mywiki    |     |
+| 뉴스 클리핑     | Vercel       | https://ms-dailynews.vercel.app       |     |
+| 뉴스 클리핑     | GitHub Pages | https://chamgil71.github.io/dailynews |     |
+| 버젯N        | Vercel       | https://budget-n.vercel.app           |     |
+| AI 생성툴 소개  | Netlify      | https://aitoolguide-ms.netlify.app    |     |
+| 차트생성       | vervel       | https://ms-clearsurvey.vercel.app/    |     |
+
 
 > [!note] 비공개 프로젝트
 > 아래 두 사이트는 접근이 제한된 개인·업무용 프로젝트입니다.
 > - 기업풀분석: https://companypool.vercel.app
 > - 과제정보: https://pjtoverview.vercel.app
+
 
 ---
 
