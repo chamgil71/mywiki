@@ -30,7 +30,8 @@ type:
 
 Fable 5는 2026년 6월 9일 출시 후 단 4일 만에 강제 차단된 사상 최초의 상업 AI 수출통제 사례다. 상무장관 Howard Lutnick이 서명한 명령서는 "외국 국적자"에 대한 접근을 전면 금지하였으며, 미국 내 근무 중인 외국 국적 Anthropic 직원까지 포함되어 사실상 전 세계 접근이 차단되었다. AWS Bedrock·Google Cloud·Microsoft Foundry·Snowflake 등 모든 플랫폼에서 동시에 서비스가 중단되었다.
 
-> 출처 : [Anthropic Disabled Fable 5 And Mythos 5 After A U.S. Export-Control Order(Forbes, 2026.06.16)](https://www.forbes.com/sites/anishasircar/2026/06/16/anthropic-disabled-fable-5-and-mythos-5-after-a-us-export-control-order-heres-what-happened/) 
+> 출처 : [Anthropic Disabled Fable 5 And Mythos 5 After A U.S. Export-Control Order(Forbes, 2026.06.16)](https://www.forbes.com/sites/anishasircar/2026/06/16/anthropic-disabled-fable-5-and-mythos-5-after-a-us-export-control-order-heres-what-happened/)
+> 
 > 출처 : [Statement on the US government directive(Anthropic, 2026.06.12)](https://www.anthropic.com/news/fable-mythos-access)
 
 - Anthropic은 법적으로 명령에 이행하면서도 "수백만 명이 사용 중인 상업 모델을 좁은 잠재적 취약점 하나로 차단하는 것에 동의할 수 없다"고 공식 반박하였다.
@@ -160,14 +161,16 @@ Siri AI는 Google Gemini 모델(1.2조 파라미터 맞춤 구축, 연간 약 10
 
 China Mobile·China Telecom 등 국영 통신사가 전국 상호 연결 컴퓨팅 허브를 운영하는 구조로, 초장기 국채 및 전략 산업 투자 국가 펀드로 재원을 조달한다. Bloomberg에 따르면 중국 데이터센터는 노동·부품·건설 비용이 미국 대비 낮아 동일 금액으로 더 큰 인프라 구축이 가능하다.
 
-> 출처 : [China Plans $295 Billion Investment to Build Nationwide AI Data Centers(Bloomberg, 2026.06.09)](https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout) 
+> 출처 : [China Plans $295 Billion Investment to Build Nationwide AI Data Centers(Bloomberg, 2026.06.09)](https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout)
+> 
 > 출처 : [China preps $295 billion plan to fund nationwide AI buildout(Spokesman, 2026.06.11)](https://www.spokesman.com/stories/2026/jun/11/china-preps-295-billion-plan-to-fund-nationwide-ai/)
 
 - Z.ai(구 Zhipu AI)가 6월 13일 GLM-5.2를 MIT 라이선스로 공개하며 Fable 5 수출통제 명령 다음 날 "미국 AI 의존 불가론"을 공개 제기하였다.
 
 GLM-5.2는 Artificial Analysis Intelligence Index v4.1에서 51점으로 MiniMax-M3(44점)·DeepSeek V4 Pro(44점)·Gemini 3.1 Pro(46점)를 모두 상회하는 오픈웨이트 최강 모델이다. 가격은 입력 1.40달러/100만 토큰, 출력 4.40달러로 GPT-5.5(5달러/30달러) 대비 입력 3.6배, 출력 6.8배 저렴하다. 744억 파라미터(활성 40억) MoE 구조, 컨텍스트 윈도우 4배 확장(100만 토큰)이 핵심 사양이다.
 
-> 출처 : [GLM-5.2: China's Zhipu AI Beats Even Google's Top Models(Trending Topics, 2026.06.18)](https://www.trendingtopics.eu/glm-5-2-chinas-zhipu-ai-beats-even-googles-top-models-with-its-new-open-llm/) 
+> 출처 : [GLM-5.2: China's Zhipu AI Beats Even Google's Top Models(Trending Topics, 2026.06.18)](https://www.trendingtopics.eu/glm-5-2-chinas-zhipu-ai-beats-even-googles-top-models-with-its-new-open-llm/)
+>  
 > 출처 : [China's $295 Billion AI Infrastructure Plan(FourWeekMBA, 2026.06.24)](https://fourweekmba.com/china-295-billion-ai-infrastructure-sovereign-stack/)
 
 **[표 5] GLM-5.2 vs 주요 모델 비교 (2026년 6월 기준)**
