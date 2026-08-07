@@ -11,6 +11,11 @@ type:
 - report
 ---
 
+```toc
+minLevel: 2
+maxLevel: 2
+```
+
 # AI 7월 월간 이슈 정리
 
 ## ■ 전체 내용 요약
