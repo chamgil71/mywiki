@@ -216,61 +216,124 @@ iii-engine의 3 프리미티브(Worker/Function/Trigger) 위에 구축한 영구
 
 ```mermaid
 flowchart TB
-    subgraph BG["상시 배경 레이어"]
-        K["① Karpathy Guidelines<br/>CLAUDE.md · 4원칙<br/>(행동 제약)"]
-        M["⑤ agentmemory<br/>MCP :3111 · 6 훅<br/>(영구 기억)"]
-    end
 
-    START(["세션 시작"]) --> INJECT
+    %% 고대비 라이트 테마 스타일 정의
 
-    subgraph INJECT["컨텍스트 주입"]
-        M -. "SessionStart 훅<br/>과거 결정·버그·선호 주입" .-> CTX["통합 컨텍스트"]
-        K -. "4원칙 행동 규칙 적용" .-> CTX
-    end
+    classDef base fill:#ffffff,stroke:#111827,stroke-width:2px,color:#000000
 
-    CTX --> INPUT
+    classDef memoryNode fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
 
-    subgraph INPUT["입력·이해 단계"]
-        direction LR
-        V["② claude-video<br/>/watch<br/>영상→프레임+자막"]
-        U["④ Understand-Anything<br/>/understand · /understand-knowledge<br/>코드·위키→지식 그래프"]
-    end
+    classDef inputNode fill:#ffedd5,stroke:#ea580c,stroke-width:2px,color:#0f172a
 
-    INPUT --> SP
+    classDef engineNode fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#0f172a
 
-    subgraph SP["③ Superpowers 실행 엔진"]
-        direction TB
-        B["/brainstorm<br/>의도 명확화·명세 도출"]
-        P["/write-plan<br/>구현 계획"]
-        T["TDD<br/>실패 테스트 선작성"]
-        I["/execute-plan<br/>subagent 구현<br/>(Git Worktree 격리)"]
-        B --> P --> T --> I
-    end
+    classDef engineSubNode fill:#ffffff,stroke:#16a34a,stroke-width:2px,color:#0f172a
 
-    K -. "Surgical Changes·Simplicity<br/>전 단계 강제" .-> SP
+    classDef obsidianNode fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a
 
-    SP --> OUT["산출물<br/>코드·문서·파이프라인"]
+    classDef bgContainer fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,stroke-dasharray: 5 5,color:#475569
 
-    OUT --> CAPTURE
+  
 
-    subgraph CAPTURE["세션 종료 캡처"]
-        M2["⑤ agentmemory<br/>Stop·PreCompact 훅<br/>결정·교훈 저장 + MEMORY.md 미러"]
-    end
+    subgraph BG["<b>[상시 배경 레이어]</b>"]
 
-    CAPTURE -.->|"다음 세션으로<br/>기억 누적"| M
-    M2 -. "mem::obsidian-export" .-> OBS[("Obsidian 볼트<br/>chamgil71/obsi")]
+        K["<b>① Karpathy Guidelines</b><br/>CLAUDE.md · 4원칙<br/>(행동 제약)"]
 
-    style K fill:#1e3a8a,stroke:#3b82f6,color:#fff
-    style M fill:#1e3a8a,stroke:#3b82f6,color:#fff
-    style M2 fill:#1e3a8a,stroke:#3b82f6,color:#fff
-    style OBS fill:#581c87,stroke:#a855f7,color:#fff
-    style V fill:#7c2d12,stroke:#ea580c,color:#fff
-    style U fill:#7c2d12,stroke:#ea580c,color:#fff
-    style SP fill:#14532d,stroke:#22c55e,color:#fff
-    style B fill:#166534,stroke:#22c55e,color:#fff
-    style P fill:#166534,stroke:#22c55e,color:#fff
-    style T fill:#166534,stroke:#22c55e,color:#fff
-    style I fill:#166534,stroke:#22c55e,color:#fff
+        M["<b>⑤ agentmemory</b><br/>MCP :3111 · 6 훅<br/>(영구 기억)"]
+
+    end
+
+  
+
+    START(["<b>세션 시작</b>"]) --> INJECT
+
+  
+
+    subgraph INJECT["<b>컨텍스트 주입</b>"]
+
+        M -. "SessionStart 훅<br/>과거 결정·버그·선호 주입" .-> CTX["<b>통합 컨텍스트</b>"]
+
+        K -. "4원칙 행동 규칙 적용" .-> CTX
+
+    end
+
+  
+
+    CTX --> INPUT
+
+  
+
+    subgraph INPUT["<b>입력·이해 단계</b>"]
+
+        direction LR
+
+        V["<b>② claude-video</b><br/>/watch<br/>영상 → 프레임+자막"]
+
+        U["<b>④ Understand-Anything</b><br/>/understand · /understand-knowledge<br/>코드·위키 → 지식 그래프"]
+
+    end
+
+  
+
+    INPUT --> SP
+
+  
+
+    subgraph SP["<b>③ Superpowers 실행 엔진</b>"]
+
+        direction TB
+
+        B["<b>/brainstorm</b><br/>의도 명확화·명세 도출"]
+
+        P["<b>/write-plan</b><br/>구현 계획"]
+
+        T["<b>TDD</b><br/>실패 테스트 선작성"]
+
+        I["<b>/execute-plan</b><br/>subagent 구현<br/>(Git Worktree 격리)"]
+
+        B --> P --> T --> I
+
+    end
+
+  
+
+    K -. "Surgical Changes · Simplicity<br/>전 단계 강제" .-> SP
+
+    SP --> OUT["<b>산출물</b><br/>코드·문서·파이프라인"]
+
+    OUT --> CAPTURE
+
+  
+
+    subgraph CAPTURE["<b>세션 종료 캡처</b>"]
+
+        M2["<b>⑤ agentmemory</b><br/>Stop·PreCompact 훅<br/>결정·교훈 저장 + MEMORY.md 미러"]
+
+    end
+
+  
+
+    CAPTURE -.->|"다음 세션으로<br/>기억 누적"| M
+
+    M2 -. "mem::obsidian-export" .-> OBS[("<b>Obsidian 볼트</b><br/>chamgil71/obsi")]
+
+  
+
+    %% 클래스 적용
+
+    class K,M,M2 memoryNode
+
+    class V,U inputNode
+
+    class B,P,T,I engineSubNode
+
+    class SP engineNode
+
+    class OBS obsidianNode
+
+    class START,CTX,OUT base
+
+    class BG bgContainer
 ```
 
 ### 결합 시 레이어별 역할 요약
