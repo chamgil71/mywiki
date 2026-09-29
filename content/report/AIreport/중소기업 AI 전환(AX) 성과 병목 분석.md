@@ -1,6 +1,6 @@
 ---
 created: 2026-09-23
-modified: 2026-09-23
+modified: 2026-09-28
 publish: true
 status: 완료(본문 Ⅰ~Ⅻ장 및 부록)
 tags:
