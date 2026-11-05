@@ -83,6 +83,7 @@ Obsidian 활용법, 바이브코딩(AI 코딩 도구) 실전 가이드, Lovable 
 > 아래 두 사이트는 접근이 제한된 개인·업무용 프로젝트입니다.
 > - 기업풀분석: https://companypool.vercel.app
 > - 과제정보: https://pjtoverview.vercel.app
+> - 규정집테스트 : https://niris-sigma.vercel.app
 
 
 ---
