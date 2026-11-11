@@ -12,13 +12,12 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: false,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    // 방문 통계 미사용. 도입 시 provider 설정 후 static_pages/privacy.md 에도 반영할 것
+    analytics: null,
     locale: "ko-KR",
     baseUrl: process.env.VERCEL 
       ? "mywiki-khaki.vercel.app"        // Vercel 환경
-      : "chamgil71.github.io",    // GitHub Pages 환경
+      : "chamgil71.github.io/mywiki",    // GitHub Pages 환경 (프로젝트 페이지라 /mywiki 하위 경로)
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
